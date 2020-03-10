@@ -18,9 +18,9 @@
   },
   "peerDependencies": {
     "gatsby": ">=2.2.9",
+    "prop-types": ">=15.7.2",
     "react": ">=16.8.5",
     "react-dom": ">=16.8.5",
-    "prop-types": ">=15.7.2",
     "styled-components": ">=4.2.0"
   },
   "dependencies": {
@@ -28,6 +28,7 @@
     "clipboard": "^2.0.4",
     "core-js": "^2.6.5",
     "gatsby": "^2.8.5",
+    "gatsby-cli": "^2.10.4",
     "npm": "^6.9.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",

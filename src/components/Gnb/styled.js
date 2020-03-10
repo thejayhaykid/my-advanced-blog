@@ -122,7 +122,7 @@ export const ListMenu = styled.li`
 `;
 
 export const Home = styled(FaHome)`
-  font-size: 36px;
+  font-size: 24px;
 `;
 
 export const StyledLink = styled(Link)`

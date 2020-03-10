@@ -14,7 +14,7 @@ exports.AUTHOR = "Jake Hayes";
 exports.EMAIL = "jakejhayes@gmail.com";
 exports.KEYWORDS = ["Gatsby", "ReactJS"].join(", ");
 exports.SITE_URL = "https://jakehayes.net";
-exports.PROFILE = "https://avatars3.githubusercontent.com/u/42737121?s=200&v=4";
+exports.PROFILE = "https://pbs.twimg.com/profile_images/978886322470387713/kA3_5cAD_400x400.jpg";
 
 // Social
 exports.GITHUB_ID = "thejayhaykid";

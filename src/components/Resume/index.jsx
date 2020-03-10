@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { FaPrint, FaGithub, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaPrint, FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import Clearfix from '~/components/Common/Clearfix';
 import { PREFIX, AUTHOR, EMAIL, GITHUB_ID, TWITTER_ID, FACEBOOK_ID, LINKEDIN_ID } from '~/constants';
 import * as profileUrl from '~/resources/me.png';
@@ -79,15 +79,6 @@ const Resume = ({
               rel="noreferrer noopener"
             >
               <FaTwitter />
-            </a>
-          ) : null}
-          {FACEBOOK_ID ? (
-            <a
-              href={`https://www.facebook.com/${FACEBOOK_ID}`}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FaFacebook />
             </a>
           ) : null}
           {LINKEDIN_ID ? (
