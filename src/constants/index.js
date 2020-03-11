@@ -24,4 +24,4 @@ exports.DEVTO_ID = "thejayhaykid";
 exports.DRIBBBLE_ID = "thejayhaykid";
 
 // Disqus (Recommend you to use this)
-exports.DISQUS_ID = "thejayhaykid";
+exports.DISQUS_ID = "disqus_Kq3WcJySaD";
