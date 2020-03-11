@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { FaPrint, FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaPrint, FaGithub, FaTwitter, FaLinkedin, FaDev, FaDribbble } from 'react-icons/fa';
 import Clearfix from '~/components/Common/Clearfix';
-import { PREFIX, AUTHOR, EMAIL, GITHUB_ID, TWITTER_ID, FACEBOOK_ID, LINKEDIN_ID } from '~/constants';
+import { PREFIX, AUTHOR, EMAIL, GITHUB_ID, TWITTER_ID, LINKEDIN_ID, DEVTO_ID, DRIBBBLE_ID } from '~/constants';
 import * as profileUrl from '~/resources/me.png';
 import { Wrapper, BasicInformation, SocialInformation, MDInformation, Button } from './styled';
 
@@ -89,6 +89,24 @@ const Resume = ({
             >
               <FaLinkedin />
             </a>
+          ) : null}
+          {DEVTO_ID ? (
+            <a 
+              href={`https://dev.to/${DEVTO_ID}`}
+              target="_blank"
+              rel="noreferrer noopener"
+              >
+                <FaDev />
+              </a>
+          ) : null}
+          {DRIBBBLE_ID ? (
+            <a 
+              href={`https://dribbble.com/${DRIBBBLE_ID}`}
+              target="_blank"
+              rel="noreferrer noopener"
+              >
+                <FaDribbble />
+              </a>
           ) : null}
         </SocialInformation>
         <MDInformation>

@@ -20,6 +20,8 @@ exports.PROFILE = "https://pbs.twimg.com/profile_images/978886322470387713/kA3_5
 exports.GITHUB_ID = "thejayhaykid";
 exports.TWITTER_ID = "thejayhaykid";
 exports.LINKEDIN_ID = "thejayhaykid";
+exports.DEVTO_ID = "thejayhaykid";
+exports.DRIBBBLE_ID = "thejayhaykid";
 
 // Disqus (Recommend you to use this)
 exports.DISQUS_ID = "thejayhaykid";
