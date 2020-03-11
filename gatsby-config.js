@@ -1,8 +1,9 @@
-const { TITLE, AUTHOR, SITE_URL } = require('./src/constants');
+const { TITLE, AUTHOR, SITE_URL, DESCRIPTION } = require('./src/constants');
 
 const siteMetadata = {
   title: TITLE,
   author: AUTHOR,
+  description: DESCRIPTION,
   homepage: SITE_URL,
   siteUrl: SITE_URL,
 };
