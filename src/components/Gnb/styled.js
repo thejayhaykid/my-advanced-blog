@@ -49,7 +49,7 @@ export const GnbWrapper = styled.div`
   position: fixed;
   width: 100%;
   font-size: 14px;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-weight: 600;
   z-index: 3000;
 
