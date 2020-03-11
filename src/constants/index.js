@@ -19,7 +19,6 @@ exports.PROFILE = "https://pbs.twimg.com/profile_images/978886322470387713/kA3_5
 // Social
 exports.GITHUB_ID = "thejayhaykid";
 exports.TWITTER_ID = "thejayhaykid";
-exports.FACEBOOK_ID = "thejayhaykid";
 exports.LINKEDIN_ID = "thejayhaykid";
 
 // Disqus (Recommend you to use this)
