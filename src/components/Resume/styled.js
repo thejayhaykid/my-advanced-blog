@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Clearfix from '~/components/Common/Clearfix';
+import styled from "styled-components";
+import Clearfix from "~/components/Common/Clearfix";
 
 export const Wrapper = styled.section`
   padding: 100px 0 0;
@@ -23,11 +23,11 @@ export const BasicInformation = styled.section`
 
   h1 {
     font-size: 2em;
-    margin: .67em 0;
+    margin: 0.67em 0;
   }
 
   p {
-    margin: .67em 0;
+    margin: 0.67em 0;
   }
 
   img {
@@ -49,18 +49,18 @@ export const MDInformation = styled.section`
 
   h2 {
     font-size: 1.5em;
-    margin: .67em 0;
+    margin: 0.67em 0;
   }
 
   ul {
     margin: 16px 0 0;
     padding: 0 0 0 20px;
-    line-height: 2em;
+    line-height: 1.5em;
     list-style: disc;
   }
 
   li ul {
-    margin: 0 0 16px;;
+    margin: 0 0 16px;
     padding: 0 0 0 20px;
     list-style: circle;
   }
