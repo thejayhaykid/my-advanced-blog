@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const PostsWrapper = styled.section`
   margin: auto;
@@ -12,12 +12,12 @@ const PostsWrapper = styled.section`
   &:before,
   &:after {
     display: block;
-    content: '';
+    content: "";
     clear: both;
   }
 
   h1 {
-    margin: .67em 0;
+    margin: 0.67em 0;
     font-size: 32px;
   }
 

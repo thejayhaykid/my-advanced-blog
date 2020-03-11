@@ -7,7 +7,7 @@ tags: ['Python','kata','test-driven-development','pytest']
 categories: ['Python']
 path: "/tech/2020/03/"
 category: "Programming"
-images: ["images/1.jpg"]
+images: ["images/blog/tech/2020/03/kata-cover-image.jpg"]
 ---
 
 *Note: This post is still a work in progress.*

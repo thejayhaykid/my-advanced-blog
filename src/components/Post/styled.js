@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Tags = styled.div`
   margin: 1em 0;
 
   a {
     margin: 0 0 0 4px;
-    color: #000;
+    color: inherit;
     text-decoration: blink;
 
     &:hover {
@@ -42,10 +42,10 @@ export const PostContent = styled.section`
     margin: 40px 0 0;
     padding: 0 0 0 2em;
     line-height: 1.2em;
-    color: #aaa;
-    font-style: italic;
-    font-family: 'Kaushan Script';
-    font-size: 24px;
+    color: inherit;
+    font-weight: bold;
+    border-left: 5px solid #777;
+    font-size: 1.6em;
   }
 
   pre {
@@ -94,7 +94,7 @@ export const ComponentInPost = styled.div`
     color: #fff;
     background-color: #263238;
     font-weight: 100;
-    content: 'Application for example';
+    content: "Application for example";
   }
 
   &:after {
@@ -106,7 +106,7 @@ export const ComponentInPost = styled.div`
     height: 10px;
     background-color: #ff5f56;
     border-radius: 50%;
-    content: '';
+    content: "";
   }
 
   & > *:first-child {
@@ -119,7 +119,7 @@ export const ComponentInPost = styled.div`
       height: 10px;
       background-color: #ffbd2e;
       border-radius: 50%;
-      content: '';
+      content: "";
     }
 
     &:after {
@@ -131,7 +131,7 @@ export const ComponentInPost = styled.div`
       height: 10px;
       background-color: #27c93f;
       border-radius: 50%;
-      content: '';
+      content: "";
     }
   }
 `;

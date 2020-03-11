@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.section`
   margin: 1em 0;
 
   a {
-    color: #000;
+    color: inherit;
   }
 
   span,
