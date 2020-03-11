@@ -4,18 +4,19 @@ title: "Resume"
 date: "2020-03-09T00:00:00.000Z"
 path: "/resume/"
 ---
+# EXPERIENCE
 
-## EXPERIENCE
+## Senior Developer
 
-### Senior Developer
-#### Nationwide, Columbus, OH / 2020 - Present
+### Nationwide, Columbus, OH / 2020 - Present
 
 - React Web Developer using Typescript
 - Helped migrate the Web App from Sharepoint to AWS
 - More information coming
 
-### Consultant 
-#### HMB, Inc., Westerville, OH / 2017 – 2020
+## Consultant
+
+### HMB, Inc., Westerville, OH / 2017 – 2020
 
 - Supported and developed a Python application that receives GPS data sent in from the field, then processes the data using Arcpy, and stores it for use into an Oracle SQL Databases
 - Developed a Python script to automate the creation of the standard testing Excel documentation that the client uses
@@ -26,8 +27,9 @@ path: "/resume/"
 - Prompted from Associate Consultant to Consultant a year ahead of the typical promotional schedule
 - Received an award for showing initiative with a new and unfamiliar system
 
-### AppleCare at Home Senior Advisor
-#### Apple, Inc., Cupertino, CA / 2014 – 2017
+## AppleCare at Home Senior Advisor
+
+### Apple, Inc., Cupertino, CA / 2014 – 2017
 
 - Resolved matters related to technical difficulties and product use/misuse to ensure customer satisfaction
 - Promoted to top tier of advising to collect data and logs that would be distributed to the engineering team for further research and problem solving 
@@ -35,14 +37,16 @@ path: "/resume/"
 
 ---
 
-## CERTIFICATIONS
-###  FreeCodeCamp.org
+# CERTIFICATIONS
+
+## FreeCodeCamp.org
+
 - Responsive Web Design
 - JavaScript Algorithms and Data Structures Certification
 
 ---
 
-## TECHNICAL SKILLS
+# TECHNICAL SKILLS
 
 - React
 - TypeScript
@@ -57,13 +61,15 @@ path: "/resume/"
 
 ---
 
-## EDUCATION
+# EDUCATION
 
-### BACHELOR OF SCIENCE
+## BACHELOR OF SCIENCE
+
 Geographic Information Science
 The Ohio State University
 2013 – 2017
 
-### DESIGN MINOR
+## DESIGN MINOR
+
 The Ohio State University
 2014-2017
