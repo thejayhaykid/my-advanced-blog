@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import SimpleWrapper from '~/components/Common/SimpleWrapper';
-import { PRIMARY_COLOR } from '~/components/Common/constants';
+import styled from "styled-components";
+import SimpleWrapper from "~/components/Common/SimpleWrapper";
+import { PRIMARY_COLOR } from "~/components/Common/constants";
 
 export const Wrapper = styled(SimpleWrapper)`
   padding: 100px 0 0;
@@ -12,7 +12,7 @@ export const Wrapper = styled(SimpleWrapper)`
   &:before,
   &:after {
     display: block;
-    content: '';
+    content: "";
     clear: both;
   }
 `;
@@ -20,7 +20,7 @@ export const Wrapper = styled(SimpleWrapper)`
 export const PortfolioDescription = styled.section`
   float: left;
   padding: 0 0 0 36px;
-  width: 50%;
+  width: 20%;
 
   @media (max-width: 414px) {
     float: none;
@@ -53,8 +53,8 @@ export const PortfolioDescription = styled.section`
 export const PortfolioImages = styled.section`
   float: left;
   padding: 0 36px 0 0;
-  width: 50%;
-  max-height: calc(100vh - 100px);
+  width: 80%;
+  max-height: calc(100vh - 80px);
   overflow-y: scroll;
 
   @media (max-width: 414px) {
@@ -67,8 +67,10 @@ export const PortfolioImages = styled.section`
 
   img {
     padding: 16px;
-    width: 100%;
-    height: auto;
+    max-height: calc(100vh - 100px);
+    max-width: 100%;
+    align-content: center;
+    /*height: auto;*/
 
     @media (max-width: 414px) {
       float: left;
