@@ -12,9 +12,17 @@ exports.PREFIX = "Jake Hayes | ";
 exports.DESCRIPTION = "Jake Hayes' personal blog";
 exports.AUTHOR = "Jake Hayes";
 exports.EMAIL = "jakejhayes@gmail.com";
-exports.KEYWORDS = ["Gatsby", "ReactJS"].join(", ");
+exports.KEYWORDS = [
+  "Gatsby",
+  "ReactJS",
+  "Software",
+  "Developer",
+  "Engineer",
+  "Designer",
+].join(", ");
 exports.SITE_URL = "https://jakehayes.net";
-exports.PROFILE = "https://www.jakehayes.net/static/me-d7895af12f89253475af29c75cb14b2e.png";
+exports.PROFILE =
+  "https://www.jakehayes.net/static/me-d7895af12f89253475af29c75cb14b2e.png";
 
 // Social
 exports.GITHUB_ID = "thejayhaykid";
