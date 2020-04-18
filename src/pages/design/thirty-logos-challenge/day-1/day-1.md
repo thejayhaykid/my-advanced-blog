@@ -14,7 +14,7 @@ images: ["images/blog/design/thirty-logos/day-1/user.png"]
 
 ## Prompt
 
-![user image](/images/blog/design/thirty-logos/day-1/user.png)
+![user image](../../../../resources/images/blog/design/thirty-logos/day-1/user.png)
 
 > Hey Designer!
 >
