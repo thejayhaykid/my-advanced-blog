@@ -23,3 +23,34 @@ It has been a number of years since I stretched my "logo design" muscles, but I 
 - [Will Paterson's "5 MIND BLOWING Logo Design Tips ✍"](https://www.youtube.com/watch?v=dQjcqEE37jA)
 - [The Futur Academy's "3 Principles to Improve Your Logo Design Process - Legibility, Hierarchy, and Contrast"](https://www.youtube.com/watch?v=dBIq0KArHFE)
 - [Aaron Draplin Takes On a Logo Design Challenge](https://www.youtube.com/watch?v=zOPA0NaeTBk)
+
+---
+
+## Tools that I'm using
+
+### Pencil and Paper
+
+Basics, I won't be using this everytime, but I have that option available to me and I would not hesitate to use it at any time.
+
+### [Procreate](https://procreate.art/)
+
+Primary alternative to Pencil and Paper, I'll be using it to sketch out ideas and clean up. Most things that I sketch out in Procreate will all be free hand.
+
+### [Affinity Designer](https://affinity.serif.com/en-us/designer/)
+
+I made the decision to leave Adobe Creative Cloud products after using them for years. Affinity Designer would be the Adobe CC equivalent of Illustrator. However, after researching I made the decision to go exclusively for a number of reasons
+
+1. Affinity Designer is a 1 time purchase and not a monthly subscription
+2. I also like to work from my iPad Pro and Affinity Designer on the iPad offers all the same features as the desktop version
+3. The advantage of the Affinity "Personas" is that there are times where with Adobe Illustrator I would have to switch over to Photoshop for something minor, that is not necessary when I can very easily switch to the Pixel persona.
+
+### [Affinity Photo](https://affinity.serif.com/en-us/photo/)
+
+All the reasons for me selecting Affinity Designer over Adobe Illustrator apply for why I am using Affinity Photo over Adobe Photoshop. I will be using it for mockups mostly.
+
+---
+
+## Link to each day in the challenge
+
+1. [Day 1: Space](/design/thirty-logos-challenge/day-1)
+2. [Day 2: Grind Coffee Shop](/design/thirty-logos-challenge/day-2)
