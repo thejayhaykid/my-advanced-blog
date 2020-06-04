@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { Link } from 'gatsby';
 import PortfolioCard from '~/components/Common/PortfolioCard';
 import { PREFIX } from '~/constants';
-import { Wrapper } from './styled';
+import { Wrapper, H6 } from './styled';
 
 const Portfolios = ({ data: { portfolios: { edges: portfolios } } }) => (
   <Wrapper>
@@ -26,9 +26,9 @@ const Portfolios = ({ data: { portfolios: { edges: portfolios } } }) => (
               ) : (
                 <img src={require(`~/resources/${image}`)} alt="portfolio" />
               )}
-              <h6>
+              <H6>
                 {title}
-              </h6>
+              </H6>
             </Link>
           </PortfolioCard>
         );
@@ -37,9 +37,9 @@ const Portfolios = ({ data: { portfolios: { edges: portfolios } } }) => (
       return (
         <PortfolioCard key={path}>
           <Link to={path}>
-            <h4>
+            <H6>
               {title}
-            </h4>
+            </H6>
           </Link>
         </PortfolioCard>
       );

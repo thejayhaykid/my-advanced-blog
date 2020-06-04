@@ -8,3 +8,8 @@ export const Wrapper = styled(SimpleWrapper)`
     padding: 70px 0 0;
   }
 `;
+
+export const H6 = styled.h6`
+  padding: 3px;
+  backgroundColor: rgba(255,255,255, 0.5);
+`;

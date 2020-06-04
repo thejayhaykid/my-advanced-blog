@@ -4,6 +4,12 @@ title: "Resume"
 date: "2020-03-09T00:00:00.000Z"
 path: "/resume/"
 ---
+# SUMMARY
+
+I am a Software Developer, freelance graphic and logo designer, video editor, web developer by night specializing in sports. I am open to new challenges of any kind but ready to help your team digitally in multiple ways.
+
+---
+
 # EXPERIENCE
 
 ## Senior Developer
