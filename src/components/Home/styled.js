@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Title = styled.h1`
   @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
@@ -13,9 +13,16 @@ export const Title = styled.h1`
   line-height: 1.5em;
   font-size: 48px;
   font-size: 10vw;
-  font-family: 'Kaushan Script';
+  font-family: "Kaushan Script";
   text-align: center;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+`;
+
+export const PortfolioContainer = styled.section`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem;
 `;
