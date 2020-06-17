@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import SimpleWrapper from '~/components/Common/SimpleWrapper';
+import styled from "styled-components";
+import SimpleWrapper from "~/components/Common/SimpleWrapper";
 
 export const Wrapper = styled(SimpleWrapper)`
   padding: 100px 0 0;
@@ -7,4 +7,11 @@ export const Wrapper = styled(SimpleWrapper)`
   @media (max-width: 414px) {
     padding: 70px 0 0;
   }
+`;
+
+export const PortfolioContainer = styled.section`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem;
 `;
