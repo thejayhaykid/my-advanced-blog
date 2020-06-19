@@ -4,6 +4,7 @@ import { PRIMARY_COLOR } from "~/components/Common/constants";
 
 export const Wrapper = styled(SimpleWrapper)`
   padding: 100px 0 0;
+  margin: 3px;
 
   @media (max-width: 414px) {
     padding: 70px 16px 0;
@@ -50,45 +51,9 @@ export const PortfolioDescription = styled.section`
   }
 `;
 
-export const PortfolioImages = styled.section`
-  float: left;
-  padding: 0 36px 0 0;
-  width: 80%;
-  max-height: calc(100vh - 80px);
-  overflow-y: scroll;
-
-  @media (max-width: 414px) {
-    float: none;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    overflow-y: visible;
-  }
-
-  img {
-    padding: 16px;
-    max-height: calc(100vh - 100px);
-    max-width: 100%;
-    align-content: center;
-    /*height: auto;*/
-
-    @media (max-width: 414px) {
-      float: left;
-      margin: 0 0 8px;
-      padding: 0;
-      &:last-child {
-        margin: 0 0 16px;
-      }
-    }
-  }
-
-  ::-webkit-scrollbar {
-    width: 4px;
-    height: 6px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: ${PRIMARY_COLOR};
-    border-radius: 6px;
-  }
+export const PortfolioContainer = styled.section`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem;
 `;
