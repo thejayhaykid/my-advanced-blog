@@ -36,6 +36,10 @@ const PortfolioCard = styled.section`
     /*z-index: -1;*/
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
+
+  /* Flex details */
+  flex: 0 1 300px;
+  padding: 5px;
 `;
 
 export default PortfolioCard;

@@ -21,8 +21,14 @@ export const Title = styled.h1`
 `;
 
 export const PortfolioContainer = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-  grid-gap: 2rem;
-  margin: 2rem;
+  display: inline-flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: 100%;
+  align-content: stretch;
+  justify-content: space-around;
+  /*grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 2rem;*/
+  padding: 5px;
+  margin: 5px;
 `;
