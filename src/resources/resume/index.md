@@ -4,6 +4,9 @@ title: "Resume"
 date: "2020-03-09T00:00:00.000Z"
 path: "/resume/"
 ---
+
+I am a Columbus-based freelance software developer with a passion for design. After minoring in design, I have been given the opportunity to specialize in design types ranging from logo, video and sports. One element that sets me apart is my love of learning. If I haven’t encountered the type of project you are looking for, I will spend countless hours ensuring that I am an expert on the subject. I am open and excited to tackle new challenges and I am ready to help you team digitally from the genesis of your product, to the consumer facing design. 
+
 # EXPERIENCE
 
 ## Senior Developer
