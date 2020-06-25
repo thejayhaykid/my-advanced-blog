@@ -7,7 +7,7 @@ tags: ["Design", "Logos", "Thirty Logos"]
 categories: ["Design", "Logos", "Thirty Logos"]
 path: "/design/projects/jaguarboard"
 category: "Design"
-images: ["images/portfolio/jaguarboard/Images/FirstSlide-01.jpg"]
+images: ["images/blog/design/jaguarboard/Images/FirstSlide-01.jpg"]
 ---
 
 # JaguarBoard Branding
