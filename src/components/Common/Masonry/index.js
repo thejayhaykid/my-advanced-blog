@@ -4,7 +4,7 @@ import { Parent, Child } from "./styles";
 
 export default class Masonry extends Component {
   static defaultProps = {
-    rowHeight: 40, // in pixels
+    rowHeight: 10, // in pixels
     colWidth: `17em`,
   };
 
