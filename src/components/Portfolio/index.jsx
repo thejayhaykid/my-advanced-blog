@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import ModalImage from "react-modal-image";
 import { PREFIX } from "~/constants";
-import { Wrapper, PortfolioDescription, PortfolioContainer } from "./styled";
-import { PortfolioCard } from "~/components/Common/PortfolioCard";
-//import Masonry from "../Common/Masonry";
+import { Wrapper, PortfolioDescription, PortfolioImages } from "./styled";
 
 const Portfolio = ({
   data: {
@@ -29,43 +27,39 @@ const Portfolio = ({
       <PortfolioDescription>
         <section dangerouslySetInnerHTML={{ __html: html }} />
       </PortfolioDescription>
-      <PortfolioContainer>
+      <PortfolioImages>
         {images.map((image) => {
           if (image.includes("//")) {
             return (
-              <PortfolioCard key={path}>
-                <ModalImage
-                  key={image}
-                  alt={title}
-                  small={image}
-                  medium={image}
-                  large={image}
-                  hideDownload={true}
-                  hideZoom={true}
-                  style={imageStyle}
-                />
-              </PortfolioCard>
+              <ModalImage
+                key={image}
+                alt={title}
+                small={image}
+                medium={image}
+                large={image}
+                hideDownload={true}
+                hideZoom={true}
+                style={imageStyle}
+              />
             );
           }
 
           const url = require(`~/resources/${image}`);
 
           return (
-            <PortfolioCard>
-              <ModalImage
-                key={image}
-                alt={title}
-                small={url}
-                medium={url}
-                large={url}
-                hideDownload={true}
-                hideZoom={true}
-                style={imageStyle}
-              />
-            </PortfolioCard>
+            <ModalImage
+              key={image}
+              alt={title}
+              small={url}
+              medium={url}
+              large={url}
+              hideDownload={true}
+              hideZoom={true}
+              style={imageStyle}
+            />
           );
         })}
-      </PortfolioContainer>
+      </PortfolioImages>
     </Wrapper>
   );
 };
