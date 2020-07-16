@@ -13,3 +13,8 @@ images:
 # Thirty Logo Challenge
 
 [Join the challenge here!](https://www.logocore.com/logo-challenge/)
+
+[My personal introduction to the challenge](/design/thirty-logos-challenge/intro)
+
+1. [Day 1: Space](/design/thirty-logos-challenge/day-1)
+2. [Day 2: Grind](/design/thirty-logos-challenge/day-2)

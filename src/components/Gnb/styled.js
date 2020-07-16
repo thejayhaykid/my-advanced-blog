@@ -834,6 +834,10 @@ export const GnbWrapper = styled.div`
   font-family: Lato, sans-serif;
   font-weight: 600;
   z-index: 3000;
+  backdrop-filter: blur(10px);
+  @-moz-document url-prefix() { 
+    background-color: ${({ theme: { backgroundColor } }) => backgroundColor};
+  }
 
   @media (max-width: 414px) {
     height: 60px;

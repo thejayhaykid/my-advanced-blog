@@ -47,6 +47,12 @@ export const SocialInformation = styled.section`
 export const MDInformation = styled.section`
   font-size: 16px;
 
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
+  }
+
   h2 {
     font-size: 1.5em;
     margin: 0.67em 0;

@@ -1,8 +1,8 @@
 ---
 title: "Thirty Logos Design Challenge: Day 1"
-date: 2020-04-11
-lastmod: 2020-04-11
-summary: ""
+date: 2020-04-18
+lastmod: 2020-04-18
+summary: "A Logo for a coworking office space name Space"
 tags: ["Design", "Logos", "Thirty Logos"]
 categories: ["Design", "Logos", "Thirty Logos"]
 path: "/design/thirty-logos-challenge/day-1"
@@ -72,3 +72,8 @@ After getting the idea and the font down, the last thing was just to bring it al
 ![Sign](../../../../resources/images/blog/design/thirty-logos/day-1/Sign-mockup.png)
 
 ![Wall Mockup](../../../../resources/images/blog/design/thirty-logos/day-1/Wall-mockup.png)
+
+---
+
+< [My personal introduction to the challenge](/design/thirty-logos-challenge/intro) || 
+[Day 2: Grind](/design/thirty-logos-challenge/day-2) >

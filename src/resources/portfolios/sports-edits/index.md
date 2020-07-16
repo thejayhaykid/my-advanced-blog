@@ -5,6 +5,7 @@ date: "2020-04-08T00:00:00.000Z"
 path: "/portfolio/sports"
 images:
   [
+    "images/portfolio/sports/Carnes-men.png",
     "images/portfolio/sports/HJQ.png",
     "images/portfolio/sports/2018-Varsity-Cover.png",
     "images/portfolio/sports/first-jackets.jpg",
