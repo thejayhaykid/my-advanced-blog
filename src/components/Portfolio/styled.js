@@ -21,6 +21,7 @@ export const PortfolioDescription = styled.section`
   float: left;
   padding: 0 0 0 36px;
   width: 20%;
+  font-family: lato, Arial, Helvetica, sans-serif;
 
   @media (max-width: 414px) {
     float: none;
@@ -54,8 +55,8 @@ export const PortfolioImages = styled.section`
   float: left;
   padding: 0 36px 0 0;
   width: 80%;
-  max-height: calc(100vh - 80px);
-  overflow-y: scroll;
+  overflow-y: visible;
+  margin-bottom: 20px;
 
   @media (max-width: 414px) {
     float: none;

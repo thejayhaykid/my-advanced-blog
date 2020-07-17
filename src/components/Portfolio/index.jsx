@@ -1,13 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import ModalImage from "react-modal-image";
 import { PREFIX } from "~/constants";
 import { Wrapper, PortfolioDescription, PortfolioImages } from "./styled";
 import styles from "../../sass/portfolio.module.scss";
 
 /*
- * TODO: Replace modal with custom solution
+ * TODO: Create modal as onClick for images
  */
 
 const Portfolio = ({
@@ -18,6 +17,11 @@ const Portfolio = ({
     },
   },
 }) => {
+  let imageClick = (event, imageURL) => {
+    // TODO: Implement function
+    console.log(imageURL);
+  };
+
   return (
     <Wrapper>
       <Helmet>
@@ -32,32 +36,28 @@ const Portfolio = ({
           {images.map((image) => {
             if (image.includes("//")) {
               return (
-                <ModalImage
-                  key={image}
-                  alt={title}
-                  small={image}
-                  medium={image}
-                  large={image}
-                  hideDownload={true}
-                  hideZoom={true}
-                  className={styles.image}
-                />
+                <div className={styles.image}>
+                  <img
+                    className={styles.modal}
+                    src={image}
+                    alt={title}
+                    onClick={(e) => imageClick(e, image)}
+                  />
+                </div>
               );
             }
 
             const url = require(`~/resources/${image}`);
 
             return (
-              <ModalImage
-                key={image}
-                alt={title}
-                small={url}
-                medium={url}
-                large={url}
-                hideDownload={true}
-                hideZoom={true}
-                className={styles.image}
-              />
+              <div className={styles.image}>
+                <img
+                  className={styles.modal}
+                  src={url}
+                  alt={title}
+                  onClick={(e) => imageClick(e, url)}
+                />
+              </div>
             );
           })}
         </div>
