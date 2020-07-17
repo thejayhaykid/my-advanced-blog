@@ -4,6 +4,11 @@ import Helmet from "react-helmet";
 import ModalImage from "react-modal-image";
 import { PREFIX } from "~/constants";
 import { Wrapper, PortfolioDescription, PortfolioImages } from "./styled";
+import styles from "../../sass/portfolio.module.scss";
+
+/*
+ * TODO: Replace modal with custom solution
+ */
 
 const Portfolio = ({
   data: {
@@ -13,11 +18,6 @@ const Portfolio = ({
     },
   },
 }) => {
-  const imageStyle = {
-    maxHeight: "calc(100vh - 100px)",
-    maxWidth: "100%",
-    alignContent: "center",
-  };
   return (
     <Wrapper>
       <Helmet>
@@ -28,37 +28,39 @@ const Portfolio = ({
         <section dangerouslySetInnerHTML={{ __html: html }} />
       </PortfolioDescription>
       <PortfolioImages>
-        {images.map((image) => {
-          if (image.includes("//")) {
+        <div className={styles.imagesGrid}>
+          {images.map((image) => {
+            if (image.includes("//")) {
+              return (
+                <ModalImage
+                  key={image}
+                  alt={title}
+                  small={image}
+                  medium={image}
+                  large={image}
+                  hideDownload={true}
+                  hideZoom={true}
+                  className={styles.image}
+                />
+              );
+            }
+
+            const url = require(`~/resources/${image}`);
+
             return (
               <ModalImage
                 key={image}
                 alt={title}
-                small={image}
-                medium={image}
-                large={image}
+                small={url}
+                medium={url}
+                large={url}
                 hideDownload={true}
                 hideZoom={true}
-                style={imageStyle}
+                className={styles.image}
               />
             );
-          }
-
-          const url = require(`~/resources/${image}`);
-
-          return (
-            <ModalImage
-              key={image}
-              alt={title}
-              small={url}
-              medium={url}
-              large={url}
-              hideDownload={true}
-              hideZoom={true}
-              style={imageStyle}
-            />
-          );
-        })}
+          })}
+        </div>
       </PortfolioImages>
     </Wrapper>
   );
