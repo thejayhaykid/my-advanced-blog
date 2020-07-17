@@ -125,7 +125,8 @@ const Gnb = ({
   const isPortfolio = pathname.replace(/\/$/, "").startsWith("/portfolios");
   const isHome = pathname.replace(/\/$/, "") === "";
   const isResume = pathname.replace(/\/$/, "") === "/resume";
-  const isPost = !(isPortfolio || isHome || isResume);
+  const isContact = pathname.replace(/\/$/, "") === "/contact";
+  const isPost = !(isPortfolio || isHome || isResume || isContact);
 
   return (
     <GnbWrapper>
@@ -193,6 +194,15 @@ const Gnb = ({
                 onClick={toggleMenu}
               >
                 Resume
+              </StyledLink>
+            </ListMenu>
+            <ListMenu>
+              <StyledLink
+                to="/contact"
+                className={isContact ? "active" : ""}
+                onClick={toggleMenu}
+              >
+                Contact
               </StyledLink>
             </ListMenu>
             <SearchBarWrapper>
@@ -263,8 +273,8 @@ const Gnb = ({
         </ListMenu>
         <ListMenu>
           <StyledLink to="/pages/1" className={isPost ? "active" : ""}>
-            Posts &nbsp;
-            {categories.length > 0 ? <FaCaretDown /> : null}
+            Posts {!isContact ? ` ` : null}
+            {categories.length > 0 && !isContact ? <FaCaretDown /> : null}
           </StyledLink>
           <SubMenu>
             <div>
@@ -299,6 +309,11 @@ const Gnb = ({
         <ListMenu>
           <StyledLink to="/resume" className={isResume ? "active" : ""}>
             Resume
+          </StyledLink>
+        </ListMenu>
+        <ListMenu>
+          <StyledLink to="/contact" className={isContact ? "active" : ""}>
+            Contact
           </StyledLink>
         </ListMenu>
       </List>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { ThemeProvider } from "styled-components";
 import Gnb from "~/components/Gnb";
-import Footer from "~/components/Footer";
+// import Footer from "~/components/Footer";
 import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
 import { Wrapper } from "./styled";
 
@@ -18,7 +18,7 @@ export default class App extends Component {
 
   state = {
     isDracula:
-      global.localStorage && global.localStorage.getItem("theme") === "dracula",
+      global.localStorage && global.localStorage.getItem("theme") ? global.localStorage.getItem("theme") === "dracula" : window.matchMedia("(prefers-color-scheme: dark)")
   };
 
   toggleTheme = () => {

@@ -1,0 +1,36 @@
+.title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form {
+    display: grid;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    border: 1px solid #666666;
+    grid-template-areas: "name email" "subject subject" "message message" "message message" "send clear";
+
+    .nameLabel {
+        grid-area: name;
+        .nameText {
+            font-weight: bold;
+        }
+        .nameInput {
+            border-radius: 5px;
+            border: none;
+        }
+    }
+
+    .emailLabel {
+        grid-area: email;
+        .emailText {
+            font-weight: bold;
+        }
+        .emailInput {
+            border-radius: 5px;
+        }
+    }
+}
