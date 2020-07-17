@@ -7,7 +7,7 @@ import { PREFIX } from "~/constants";
 import { ThemeProvider } from "styled-components";
 import Gnb from "~/components/Gnb";
 import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
-import styles from './contact.module.scss';
+import styles from "../sass/contact.module.scss";
 
 const Wrapper = styled.div`
   color: ${({ theme: { color } }) => color};
@@ -107,22 +107,46 @@ const ContactPage = (props) => {
           <input type="hidden" name="form-name" value="contact" />
           <label className={styles.nameLabel}>
             <div className={styles.nameText}>Name</div>
-            <input type="text" name="name" id="name" className={styles.nameInput} />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              className={styles.nameInput}
+            />
           </label>
           <label className={styles.emailLabel}>
-          <div className={styles.emailText}>Email</div>
-            <input type="email" name="email" id="email" className={styles.emailInput} />
+            <div className={styles.emailText}>Email</div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className={styles.emailInput}
+            />
           </label>
-          <label>
-            Subject
-            <input type="text" name="subject" id="subject" />
+          <label className={styles.subjectLabel}>
+            <div className={styles.subjectText}>Subject</div>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              className={styles.subjectInput}
+            />
           </label>
-          <label>
-            Message
-            <textarea name="message" id="message" rows="5" />
+          <label className={styles.messageLabel}>
+            <div className={styles.messageText}>Message</div>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              className={styles.messageInput}
+            />
           </label>
-          <button type="submit">Send</button>
-          <input type="reset" value="Clear" />
+          <div className={styles.buttons}>
+            <button className={styles.submitButton} type="submit">
+              Send
+            </button>
+            <input type="reset" value="Clear" className={styles.clearButton} />
+          </div>
         </form>
       </Wrapper>
     </ThemeProvider>

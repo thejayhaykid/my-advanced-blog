@@ -1,0 +1,132 @@
+.title {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  max-width: 1000px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  border: 1px solid #666666;
+  grid-template-areas: "name email" "subject subject" "message message" "message message" ". buttons";
+
+  @media (max-width: 500px) {
+    grid-template-areas: "name" "email" "subject" "message" "message" "buttons";
+    margin: 5px;
+    margin-top: 100px;
+    width: calc(100% - 10px);
+  }
+
+  .nameLabel {
+    grid-area: name;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1em;
+
+    .nameText {
+      margin-bottom: 5px;
+      font-weight: bold;
+      align-self: flex-start;
+    }
+    .nameInput {
+      border-radius: 5px;
+      border: none;
+      min-height: 25px;
+      padding: 5px;
+    }
+  }
+
+  .emailLabel {
+    grid-area: email;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1em;
+
+    .emailText {
+      font-weight: bold;
+      margin-bottom: 5px;
+      align-self: flex-start;
+    }
+    .emailInput {
+      border-radius: 5px;
+      border: none;
+      min-height: 25px;
+      padding: 5px;
+    }
+  }
+
+  .subjectLabel {
+    grid-area: subject;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1em;
+
+    .subjectText {
+      font-weight: bold;
+      margin-bottom: 5px;
+      align-self: flex-start;
+    }
+    .subjectInput {
+      border-radius: 5px;
+      border: none;
+      min-height: 25px;
+      padding: 5px;
+    }
+  }
+
+  .messageLabel {
+    grid-area: message;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1em;
+
+    .messageText {
+      font-weight: bold;
+      margin-bottom: 5px;
+      align-self: flex-start;
+    }
+    .messageInput {
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+    }
+  }
+
+  .buttons {
+    grid-area: buttons;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding-right: 15px;
+    justify-content: flex-end;
+    gap: 20px;
+
+    .submitButton {
+      padding: 5px;
+      min-height: 1.5em;
+      font-weight: bold;
+      //   background-color: blue;
+      //   color: white;
+      border-radius: 5px;
+      flex-grow: 2;
+      max-width: 40%;
+      flex-shrink: 0;
+      border: none;
+    }
+
+    .clearButton {
+      //   background-color: blue;
+      //   color: white;
+      padding: 5px;
+      align-self: flex-end;
+      flex-grow: 2;
+      flex-shrink: 0;
+      max-width: 40%;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+}
