@@ -33,6 +33,7 @@ const PortfolioCard = styled.section`
     left: -5%;
     height: 110%;
     width: 110%;
+    object-fit: cover;
     /*z-index: -1;*/
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   }

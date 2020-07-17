@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .nav {
   top: 0 !important;
 
@@ -16,10 +18,9 @@
   padding: 20px;
   margin: auto;
   top: 100px;
-  // margin-top: 100px;
   font-family: lato, Arial, Helvetica, sans-serif;
   border-radius: 5px;
-  border: 1px solid #666666;
+  border: 1px solid $neutral-color;
   grid-template-areas: "name email" "subject subject" "message message" "message message" ". buttons";
 
   @media (max-width: 500px) {
@@ -43,10 +44,10 @@
 
     .nameInput {
       border-radius: 5px;
-      border: 1px solid #1f1f24;
+      border: 1px solid $dark-primary;
       min-height: 25px;
       padding: 5px;
-      background-color: #dcdce5;
+      background-color: $light-primary;
     }
   }
 
@@ -64,10 +65,10 @@
 
     .emailInput {
       border-radius: 5px;
-      border: 1px solid #1f1f24;
+      border: 1px solid $dark-primary;
       min-height: 25px;
       padding: 5px;
-      background-color: #dcdce5;
+      background-color: $light-primary;
     }
   }
 
@@ -85,10 +86,10 @@
 
     .subjectInput {
       border-radius: 5px;
-      border: 1px solid #1f1f24;
+      border: 1px solid $dark-primary;
       min-height: 25px;
       padding: 5px;
-      background-color: #dcdce5;
+      background-color: $light-primary;
     }
   }
 
@@ -106,9 +107,9 @@
 
     .messageInput {
       border-radius: 5px;
-      border: 1px solid #1f1f24;
+      border: 1px solid $dark-primary;
       padding: 5px;
-      background-color: #dcdce5;
+      background-color: $light-primary;
     }
   }
 
@@ -119,7 +120,6 @@
     width: 100%;
     padding-right: 15px;
     justify-content: flex-end;
-    // gap: 20px;
     height: 2em;
 
     @media (max-width: 500px) {
@@ -131,8 +131,7 @@
       padding: 5px;
       height: 100%;
       font-weight: bold;
-      background-color: #4cdc74;
-      // color: white;
+      background-color: $main-accent;
       border-radius: 5px;
       flex-grow: 2;
       margin-right: 20px;
@@ -143,27 +142,25 @@
 
       &:hover {
         transform: scale(1.05);
-        // box-shadow: 5px 5px 10px #232323;
       }
     }
 
     .clearButton {
-      background-color: #dcdce5;
-      color: #1f1f24;
+      background-color: $light-primary;
+      color: $dark-primary;
       padding: 5px;
       align-self: flex-end;
       flex-grow: 2;
       flex-shrink: 0;
       max-width: 40%;
       border-radius: 5px;
-      border: 1px solid #1f1f24;
+      border: 1px solid $dark-primary;
       cursor: pointer;
       height: 100%;
       transition: all 0.3s ease-in-out;
 
       &:hover {
         transform: scale(1.05);
-        // box-shadow: 5px 5px 10px #232323;
       }
     }
   }
