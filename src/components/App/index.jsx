@@ -6,6 +6,11 @@ import Gnb from "~/components/Gnb";
 import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
 import { Wrapper } from "./styled";
 
+let prefersDark =
+  typeof window !== `undefined`
+    ? window.matchMedia("(prefers-color-scheme: dark)").matches
+    : false;
+
 export default class App extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
@@ -17,10 +22,6 @@ export default class App extends Component {
   };
 
   state = {
-    prefersDark:
-      typeof window !== `undefined`
-        ? window.matchMedia("(prefers-color-scheme: dark)").matches
-        : false,
     isDracula:
       global.localStorage && global.localStorage.getItem("theme")
         ? global.localStorage.getItem("theme") === "dracula"
