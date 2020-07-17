@@ -10,6 +10,7 @@ import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
 import styles from "../sass/contact.module.scss";
 
 const Wrapper = styled.div`
+  top: 0;
   color: ${({ theme: { color } }) => color};
   background-color: ${({ theme: { backgroundColor } }) => backgroundColor};
   min-height: 100vh;
@@ -82,7 +83,7 @@ const ContactPage = (props) => {
           <title>{`${PREFIX}Contact`}</title>
           <meta name="og:title" content={`${PREFIX}Contact`} />
         </Helmet>
-        <nav>
+        <nav className={styles.nav}>
           <Gnb
             location={location}
             categories={categories}
@@ -90,9 +91,10 @@ const ContactPage = (props) => {
             hasPortfolio={true}
             toggleTheme={toggleTheme}
             isDracula={isDracula}
+            className={styles.gnb}
           />
         </nav>
-        <h1 className={styles.title}>Contact Page</h1>
+        <div className={styles.emptyDiv}></div>
         <form
           method="post"
           netlify-honeypot="bot-field"
