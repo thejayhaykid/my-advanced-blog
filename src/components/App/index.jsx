@@ -18,7 +18,7 @@ export default class App extends Component {
 
   state = {
     isDracula:
-      global.localStorage && global.localStorage.getItem("theme") ? global.localStorage.getItem("theme") === "dracula" : window.matchMedia("(prefers-color-scheme: dark)")
+      global.localStorage && global.localStorage.getItem("theme") === "dracula",
   };
 
   toggleTheme = () => {

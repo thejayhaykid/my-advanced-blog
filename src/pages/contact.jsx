@@ -49,9 +49,7 @@ const Wrapper = styled.div`
 
 const ContactPage = (props) => {
   const [isDracula, setDracula] = useState(
-    global.localStorage && global.localStorage.getItem("theme")
-      ? global.localStorage.getItem("theme") === "dracula"
-      : window.matchMedia("(prefers-color-scheme: dark)")
+    global.localStorage && global.localStorage.getItem("theme") === "dracula"
   );
   const { location, categories, postInformations, hasPortfolio } = props;
   const theme = isDracula
