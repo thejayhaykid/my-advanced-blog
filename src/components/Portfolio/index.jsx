@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { PREFIX } from "~/constants";
@@ -17,9 +17,13 @@ const Portfolio = ({
     },
   },
 }) => {
+  const [showModal, setModal] = useState(false);
+  const [modalImage, setModalImage] = useState("");
+
   let imageClick = (event, imageURL) => {
     // TODO: Implement function
     console.log(imageURL);
+    setModalImage(imageURL);
   };
 
   return (
@@ -32,6 +36,7 @@ const Portfolio = ({
         <section dangerouslySetInnerHTML={{ __html: html }} />
       </PortfolioDescription>
       <PortfolioImages>
+        {showModal ? <h1>Modal showing {modalImage}</h1> : null}
         <div className={styles.imagesGrid}>
           {images.map((image) => {
             if (image.includes("//")) {
