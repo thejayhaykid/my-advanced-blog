@@ -1,29 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
+import useOutsideAlerter from "../../../hooks/useOutsideAlerter";
 import styles from "./ImageModal.module.scss";
-
-/**
- * Hook that alerts clicks outside of the passed ref
- */
-function useOutsideAlerter(ref) {
-  useEffect(() => {
-    /**
-     * Alert if clicked on outside of element
-     */
-    function handleClickOutside(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
-        console.log("click");
-      }
-    }
-
-    // Bind the event listener
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [ref]);
-}
 
 const ImageModal = ({ showModal, setShowModal, imageURL, setImageURL }) => {
   const modalClose = () => {
@@ -31,7 +9,14 @@ const ImageModal = ({ showModal, setShowModal, imageURL, setImageURL }) => {
     setImageURL("");
   };
   const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef);
+  useOutsideAlerter(wrapperRef, modalClose);
+
+  const openImageInNewTab = (e) => {
+    e.preventDefault();
+    if (typeof window !== "undefined") {
+      window.open(imageURL, "_blank");
+    }
+  };
 
   return (
     <>
@@ -40,7 +25,7 @@ const ImageModal = ({ showModal, setShowModal, imageURL, setImageURL }) => {
           <div className={styles.mainModal} ref={wrapperRef}>
             <img
               className={styles.mainImg}
-              onClick={modalClose}
+              onClick={openImageInNewTab}
               src={imageURL}
             />
           </div>
