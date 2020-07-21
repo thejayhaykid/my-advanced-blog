@@ -5,6 +5,8 @@ const PortfolioCard = styled.section`
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  border: 1px solid #1f1f24;
+  background-color: #dcdce5;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -20,6 +22,7 @@ const PortfolioCard = styled.section`
 
   h4,
   h6 {
+    height: 30px;
     z-index: auto;
     color: white;
     overflow: hidden;
@@ -27,7 +30,7 @@ const PortfolioCard = styled.section`
     margin: 20px 0 0 20px;
   }
 
-  img {
+  div > img {
     position: absolute;
     top: -5%;
     left: -5%;

@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import { PREFIX } from "~/constants";
+import Theme from "../components/Common/Theme";
 // import SimpleWrapper from "~/components/Common/SimpleWrapper";
 import { ThemeProvider } from "styled-components";
 import Gnb from "~/components/Gnb";
@@ -49,16 +50,7 @@ const Wrapper = styled.div`
 `;
 
 const ContactPage = (props) => {
-  const [prefersDark] = useState(
-    typeof window !== `undefined`
-      ? window.matchMedia("(prefers-color-scheme: dark)").matches
-      : false
-  );
-  const [isDracula, setDracula] = useState(
-    global.localStorage && global.localStorage.getItem("theme")
-      ? global.localStorage.getItem("theme") === "dracula"
-      : prefersDark
-  );
+  const [isDracula, setDracula] = useState(Theme.darkMode);
   const { location, categories, postInformations, hasPortfolio } = props;
   const theme = isDracula
     ? {

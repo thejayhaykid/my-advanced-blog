@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { NAME, TITLE, DESCRIPTION, AUTHOR, KEYWORDS } from '~/constants';
+import React, { Component } from "react";
+import { NAME, TITLE, DESCRIPTION, AUTHOR, KEYWORDS } from "~/constants";
 
-const stylesStr = require('!raw-loader!./reset.css');
+const stylesStr = require("!raw-loader!./reset.css");
 
 export default class HTML extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class HTML extends Component {
     } = this.props;
 
     return (
-      <html {...htmlAttributes} lang="ko">
+      <html {...htmlAttributes} lang="en-US">
         <head>
           {headComponents}
           <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -24,7 +24,11 @@ export default class HTML extends Component {
           <meta httpEquiv="Access-Control-Expose-Headers" content="*" />
           <meta httpEquiv="Access-Control-Allow-Credentials" content="true" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+          <meta
+            id="viewport"
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"
+          />
           <meta name="description" content={DESCRIPTION} />
           <meta name="keywords" content={KEYWORDS} />
           <meta name="author" content={AUTHOR} />
@@ -38,11 +42,18 @@ export default class HTML extends Component {
           {/* <meta name="msapplication-TileImage" content="" /> */}
           {/* <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="" /> */}
           {/* <link rel="apple-touch-icon" type="image/vnd.microsoft.icon" href="" /> */}
-          <style id="gatsby-inlined-css" dangerouslySetInnerHTML={{ __html: stylesStr }} />
+          <style
+            id="gatsby-inlined-css"
+            dangerouslySetInnerHTML={{ __html: stylesStr }}
+          />
         </head>
         <body {...bodyAttributes}>
           {preBodyComponents}
-          <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
+          <div
+            key="body"
+            id="___gatsby"
+            dangerouslySetInnerHTML={{ __html: body }}
+          />
           {postBodyComponents}
         </body>
       </html>

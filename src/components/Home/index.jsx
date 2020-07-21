@@ -7,6 +7,7 @@ import SimpleWrapper from "~/components/Common/SimpleWrapper";
 import PortfolioCard from "~/components/Common/PortfolioCard";
 import { TITLE } from "~/constants";
 import { Title, PortfolioContainer } from "./styled";
+import styles from "../../sass/home.module.scss";
 
 const Home = ({ portfolios }) => (
   <>
@@ -32,16 +33,18 @@ const Home = ({ portfolios }) => (
                 return (
                   <PortfolioCard key={path}>
                     <Link to={path}>
+                      <div className="imageDiv">
+                        {image.includes("//") ? (
+                          <img src={image} alt="portfolio" title={title} />
+                        ) : (
+                          <img
+                            src={require(`~/resources/${image}`)}
+                            alt="portfolio"
+                            title={title}
+                          />
+                        )}
+                      </div>
                       <h6>{title}</h6>
-                      {image.includes("//") ? (
-                        <img src={image} alt="portfolio" title={title} />
-                      ) : (
-                        <img
-                          src={require(`~/resources/${image}`)}
-                          alt="portfolio"
-                          title={title}
-                        />
-                      )}
                     </Link>
                   </PortfolioCard>
                 );

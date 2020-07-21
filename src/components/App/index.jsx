@@ -2,14 +2,10 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { ThemeProvider } from "styled-components";
 import Gnb from "~/components/Gnb";
+import Theme from "../Common/Theme";
 // import Footer from "~/components/Footer";
 import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
 import { Wrapper } from "./styled";
-
-let prefersDark =
-  typeof window !== `undefined`
-    ? window.matchMedia("(prefers-color-scheme: dark)").matches
-    : false;
 
 export default class App extends Component {
   static propTypes = {
@@ -22,10 +18,7 @@ export default class App extends Component {
   };
 
   state = {
-    isDracula:
-      global.localStorage && global.localStorage.getItem("theme")
-        ? global.localStorage.getItem("theme") === "dracula"
-        : prefersDark,
+    isDracula: Theme.darkMode,
   };
 
   toggleTheme = () => {
