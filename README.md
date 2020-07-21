@@ -1,7 +1,9 @@
 # gatsby-advanced-blog
+
 > Gatsby starter for advanced blog
 
 ## Install
+
 ```
 $ git clone git@github.com:wonism/gatsby-advanced-blog.git <<PROJECT_NAME>>
 # Recommend you to delete `.git`
@@ -9,25 +11,30 @@ $ cd <<PROJECT_NAME>> && rm -r .git
 ```
 
 ## Start with gatsby-cli
+
 ```
 $ gatsby new <<PROJECT_NAME>> https://github.com/wonism/gatsby-advanced-blog
 ```
 
 ## Development
+
 ```
 $ npm run dev
 ```
 
 ## Build
+
 ```
 $ npm run build
 ```
 
 ## ⚠️ Caution
+
 You **SHOULD** change some constants variable in `src/constants/index.js`.
 They are related with site informations, social media and Disqus.
 
 ## Features
+
 - Post
   - Pagination
   - Categories
@@ -40,3 +47,13 @@ They are related with site informations, social media and Disqus.
 - Portfolio
 - Resume
 - UI Theme
+
+## When adding images
+
+Open a shell one level above the folder the image was added to so that you can use [trimage](https://trimage.org), then use the following command
+
+```bash
+$ trimage -d ./DIRECTORY_NAME/
+```
+
+Then the images will be optimized
