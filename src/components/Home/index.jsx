@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 import Helmet from "react-helmet";
 import Wrapper from "~/components/Common/Wrapper";
 import { TITLE } from "~/constants";
-import { Title } from "./styled";
 import styles from "../../sass/home.module.scss";
 
 const Home = ({ portfolios }) => (
@@ -14,7 +13,9 @@ const Home = ({ portfolios }) => (
       <meta name="og:title" content={TITLE} />
     </Helmet>
     <Wrapper isHome>
-      <Title>Hello everybody!</Title>
+      <div className={styles.Main}>
+        <h1>Hello everybody!</h1>
+      </div>
     </Wrapper>
     {portfolios.length >= 4 ? (
       <div className={styles.PortfolioContainer}>
