@@ -3,10 +3,8 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import Helmet from "react-helmet";
 import Wrapper from "~/components/Common/Wrapper";
-import SimpleWrapper from "~/components/Common/SimpleWrapper";
-import PortfolioCard from "~/components/Common/PortfolioCard";
 import { TITLE } from "~/constants";
-import { Title, PortfolioContainer } from "./styled";
+import { Title } from "./styled";
 import styles from "../../sass/home.module.scss";
 
 const Home = ({ portfolios }) => (
@@ -19,48 +17,49 @@ const Home = ({ portfolios }) => (
       <Title>Hello everybody!</Title>
     </Wrapper>
     {portfolios.length >= 4 ? (
-      <SimpleWrapper>
-        <PortfolioContainer>
-          {portfolios.slice(0, 4).map(
-            ({
-              node: {
-                frontmatter: { path, title, images },
-              },
-            }) => {
-              const image = Array.isArray(images) ? images[0] : null;
+      <div className={styles.PortfolioContainer}>
+        {portfolios.slice(0, 4).map(
+          ({
+            node: {
+              frontmatter: { path, title, images = [] },
+            },
+          }) => {
+            const [image = null] = images;
 
-              if (image !== null) {
-                return (
-                  <PortfolioCard key={path}>
-                    <Link to={path}>
-                      <div className="imageDiv">
-                        {image.includes("//") ? (
-                          <img src={image} alt="portfolio" title={title} />
-                        ) : (
-                          <img
-                            src={require(`~/resources/${image}`)}
-                            alt="portfolio"
-                            title={title}
-                          />
-                        )}
-                      </div>
-                      <h6>{title}</h6>
-                    </Link>
-                  </PortfolioCard>
-                );
-              }
-
+            if (image !== null) {
               return (
-                <PortfolioCard key={path}>
+                <div className={styles.PortfolioCard} key={path}>
                   <Link to={path}>
-                    <h6>{title}</h6>
+                    {image.includes("//") ? (
+                      <img src={image} alt="portfolio" title={title} />
+                    ) : (
+                      <img
+                        src={require(`~/resources/${image}`)}
+                        alt="portfolio"
+                        className={styles.PortfolioImage}
+                        // title={title}
+                      />
+                    )}
+                    <div className={styles.CardTitle}>
+                      <span>{title}</span>
+                    </div>
                   </Link>
-                </PortfolioCard>
+                </div>
               );
             }
-          )}
-        </PortfolioContainer>
-      </SimpleWrapper>
+
+            return (
+              <div className={styles.PortfolioCard} key={path}>
+                <Link to={path}>
+                  <div className={styles.CardTitle}>
+                    <h4>{title}</h4>
+                  </div>
+                </Link>
+              </div>
+            );
+          }
+        )}
+      </div>
     ) : null}
   </>
 );

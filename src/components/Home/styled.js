@@ -19,16 +19,3 @@ export const Title = styled.h1`
   overflow: hidden;
   white-space: nowrap;
 `;
-
-export const PortfolioContainer = styled.section`
-  display: inline-flex;
-  flex-flow: row wrap;
-  gap: 1rem;
-  width: 100%;
-  align-content: stretch;
-  justify-content: space-around;
-  /*grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-  grid-gap: 2rem;*/
-  padding: 5px;
-  margin: 5px;
-`;
