@@ -2,10 +2,9 @@ import PropTypes from "prop-types";
 import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "gatsby";
-import PortfolioCard from "~/components/Common/PortfolioCard";
 import { PREFIX } from "~/constants";
-import getPosts from "~/utils/getPosts";
-import { Wrapper, PortfolioContainer } from "./styled";
+import { Wrapper } from "./styled";
+import styles from "../../sass/portfolios.module.scss";
 
 const Portfolios = ({
   data: {
@@ -17,7 +16,7 @@ const Portfolios = ({
       <title>{`${PREFIX}PORTFOLIOS`}</title>
       <meta name="og:title" content={`${PREFIX}PORTFOLIOS`} />
     </Helmet>
-    <PortfolioContainer>
+    <div className={styles.PortfolioContainer}>
       {portfolios.map(
         ({
           node: {
@@ -28,33 +27,38 @@ const Portfolios = ({
 
           if (image !== null) {
             return (
-              <PortfolioCard key={path}>
+              <div className={styles.PortfolioCard} key={path}>
                 <Link to={path}>
-                  <h6>{title}</h6>
                   {image.includes("//") ? (
                     <img src={image} alt="portfolio" title={title} />
                   ) : (
                     <img
                       src={require(`~/resources/${image}`)}
                       alt="portfolio"
-                      title={title}
+                      className={styles.PortfolioImage}
+                      // title={title}
                     />
                   )}
+                  <div className={styles.CardTitle}>
+                    <span>{title}</span>
+                  </div>
                 </Link>
-              </PortfolioCard>
+              </div>
             );
           }
 
           return (
-            <PortfolioCard key={path}>
+            <div className={styles.PortfolioCard} key={path}>
               <Link to={path}>
-                <h4>{title}</h4>
+                <div className={styles.CardTitle}>
+                  <h4>{title}</h4>
+                </div>
               </Link>
-            </PortfolioCard>
+            </div>
           );
         }
       )}
-    </PortfolioContainer>
+    </div>
   </Wrapper>
 );
 

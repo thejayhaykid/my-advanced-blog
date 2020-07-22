@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import useOutsideAlerter from "../../../hooks/useOutsideAlerter";
 import styles from "./ImageModal.module.scss";
+import close from "../../../resources/close_x.svg";
 
 const ImageModal = ({ showModal, setShowModal, imageURL, setImageURL }) => {
   const modalClose = () => {
@@ -16,6 +17,7 @@ const ImageModal = ({ showModal, setShowModal, imageURL, setImageURL }) => {
     if (typeof window !== "undefined") {
       window.open(imageURL, "_blank");
     }
+    modalClose();
   };
 
   return (
@@ -23,6 +25,7 @@ const ImageModal = ({ showModal, setShowModal, imageURL, setImageURL }) => {
       {showModal ? (
         <div className={styles.ModalDiv}>
           <div className={styles.mainModal} ref={wrapperRef}>
+            <img className={styles.closeX} src={close} onClick={modalClose} />
             <img
               className={styles.mainImg}
               onClick={openImageInNewTab}
