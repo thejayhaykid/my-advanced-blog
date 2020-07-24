@@ -3,6 +3,7 @@ import Clearfix from "~/components/Common/Clearfix";
 
 export const Wrapper = styled.section`
   padding: 100px 0 0;
+  font-family: lato, Arial, Helvetica, sans-serif;
   @media (max-width: 414px) {
     padding: 70px 16px 0;
   }
