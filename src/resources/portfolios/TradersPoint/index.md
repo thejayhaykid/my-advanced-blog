@@ -22,3 +22,5 @@ images:
 ---
 
 # Traders Point
+
+I made sets of different designs for the team, here is an example of three of the coach's bios that I made for the teams introductory meeting at the beginning of the year. I was only provided the information to include and a few pictures for each coach and allowed to create anything.
