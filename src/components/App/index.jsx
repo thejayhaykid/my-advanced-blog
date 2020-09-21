@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { ThemeProvider } from "styled-components";
 import Gnb from "~/components/Gnb";
 import Theme from "../Common/Theme";
-// import Footer from "~/components/Footer";
 import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
 import { Wrapper } from "./styled";
 
@@ -47,16 +46,11 @@ export default class App extends Component {
       hasPortfolio,
       children,
     } = this.props;
-    const { isDracula } = this.state;
-    const theme = isDracula
-      ? {
-          color: WHITE_COLOR,
-          backgroundColor: BLACK_COLOR,
-        }
-      : {
-          color: BLACK_COLOR,
-          backgroundColor: WHITE_COLOR,
-        };
+    const { isDracula } = true;
+    const theme = {
+      color: WHITE_COLOR,
+      backgroundColor: BLACK_COLOR,
+    };
 
     return (
       <ThemeProvider theme={theme}>

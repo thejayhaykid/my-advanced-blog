@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 .Main {
-  @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+  @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
   position: absolute;
   top: 0;
   bottom: 0;
@@ -13,7 +13,7 @@
   line-height: 1.5em;
   font-size: 48px;
   font-size: 10vw;
-  font-family: "Kaushan Script";
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -33,9 +33,11 @@
     margin: 0.5rem;
     position: relative;
     height: $card-height-mobile;
+
     @media (min-width: 500px) {
       height: $card-height-large-screen;
     }
+
     overflow: hidden;
     border-radius: 0.5rem;
     flex: 1;
@@ -46,17 +48,16 @@
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     transition: all 0.3s ease-in-out;
-    background: #bdc3c7; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to bottom,
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom,
       #2c3e50,
-      #bdc3c7
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to bottom,
+      #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,
       #2c3e50,
-      #bdc3c7
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     &:hover {
       -webkit-transform: scale(1.05);
@@ -66,7 +67,7 @@
       box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
     }
 
-    & > a > img {
+    &>a>img {
       width: 110%;
       height: 110%;
       top: -5%;
@@ -84,6 +85,7 @@
         scale: 1.15;
       }
     }
+
     .CardTitle {
       position: absolute;
       height: 100%;
@@ -92,25 +94,23 @@
       padding: 1rem;
       color: white;
       vertical-align: bottom;
-      background: linear-gradient(
-        to bottom,
-        hsla(0, 0%, 0%, 0) 0%,
-        hsla(0, 0%, 0%, 0.009) 11.7%,
-        hsla(0, 0%, 0%, 0.034) 22.1%,
-        hsla(0, 0%, 0%, 0.072) 31.2%,
-        hsla(0, 0%, 0%, 0.123) 39.4%,
-        hsla(0, 0%, 0%, 0.182) 46.6%,
-        hsla(0, 0%, 0%, 0.249) 53.1%,
-        hsla(0, 0%, 0%, 0.32) 58.9%,
-        hsla(0, 0%, 0%, 0.394) 64.3%,
-        hsla(0, 0%, 0%, 0.468) 69.3%,
-        hsla(0, 0%, 0%, 0.54) 74.1%,
-        hsla(0, 0%, 0%, 0.607) 78.8%,
-        hsla(0, 0%, 0%, 0.668) 83.6%,
-        hsla(0, 0%, 0%, 0.721) 88.7%,
-        hsla(0, 0%, 0%, 0.762) 94.1%,
-        hsla(0, 0%, 0%, 0.79) 100%
-      );
+      background: linear-gradient(to bottom,
+          hsla(0, 0%, 0%, 0) 0%,
+          hsla(0, 0%, 0%, 0.009) 11.7%,
+          hsla(0, 0%, 0%, 0.034) 22.1%,
+          hsla(0, 0%, 0%, 0.072) 31.2%,
+          hsla(0, 0%, 0%, 0.123) 39.4%,
+          hsla(0, 0%, 0%, 0.182) 46.6%,
+          hsla(0, 0%, 0%, 0.249) 53.1%,
+          hsla(0, 0%, 0%, 0.32) 58.9%,
+          hsla(0, 0%, 0%, 0.394) 64.3%,
+          hsla(0, 0%, 0%, 0.468) 69.3%,
+          hsla(0, 0%, 0%, 0.54) 74.1%,
+          hsla(0, 0%, 0%, 0.607) 78.8%,
+          hsla(0, 0%, 0%, 0.668) 83.6%,
+          hsla(0, 0%, 0%, 0.721) 88.7%,
+          hsla(0, 0%, 0%, 0.762) 94.1%,
+          hsla(0, 0%, 0%, 0.79) 100%);
       transition: background-color 1.5s ease;
       font-family: $primary-font;
       font-weight: bold;
@@ -118,7 +118,8 @@
 
       transition: color 1s ease;
       display: flex;
-      & > span {
+
+      &>span {
         align-self: flex-end;
       }
     }
