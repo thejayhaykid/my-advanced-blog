@@ -17,25 +17,7 @@ export default class App extends Component {
   };
 
   state = {
-    isDracula: Theme.darkMode,
-  };
-
-  toggleTheme = () => {
-    const { isDracula } = this.state;
-
-    if (isDracula) {
-      if (global.localStorage) {
-        global.localStorage.setItem("theme", "normal");
-      }
-    } else {
-      if (global.localStorage) {
-        global.localStorage.setItem("theme", "dracula");
-      }
-    }
-
-    this.setState({
-      isDracula: !isDracula,
-    });
+    isDracula: true,
   };
 
   render() {
@@ -61,7 +43,6 @@ export default class App extends Component {
               categories={categories}
               postInformations={postInformations}
               hasPortfolio={hasPortfolio}
-              toggleTheme={this.toggleTheme}
               isDracula={isDracula}
             />
           </nav>

@@ -71,7 +71,6 @@ const reducer = (state = initialState, action) => {
 
 const Gnb = ({
   location,
-  toggleTheme,
   isDracula,
   categories,
   postInformations,
@@ -252,11 +251,6 @@ const Gnb = ({
           </ul>
         </MobileMenus>
       </MobileMenu>
-      {/* <ToggleWrapper>
-        <span role="img" aria-label="change-theme" onClick={toggleTheme}>
-          <Adjust className={isDracula ? `dark` : null} />
-        </span>
-      </ToggleWrapper> */}
       <Hamburger
         className={`hamburger hamburger--spin js-hamburger ${
           isMenuOpened ? "is-active" : ""
@@ -368,7 +362,6 @@ const Gnb = ({
 Gnb.propTypes = {
   location: PropTypes.shape({ pathname: PropTypes.string.isRequired })
     .isRequired,
-  toggleTheme: PropTypes.func.isRequired,
   isDracula: PropTypes.bool.isRequired,
   categories: PropTypes.arrayOf(PropTypes.shape({})),
   postInformations: PropTypes.arrayOf(PropTypes.shape({})),
