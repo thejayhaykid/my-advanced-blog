@@ -5,10 +5,10 @@
         <rect x="-1241" y="-61" width="1139" height="1141" style="fill:none;"/>
         <g transform="matrix(4.28373,0,0,4.28373,2780.03,-1193.28)">
             <g transform="matrix(1,0,0,1,-966.729,29)">
-                <path d="M78,269L78,300L115,300L115,439L79,439L79,417L48,417L48,441C48,452.777 57.518,470 70,470L118,470C132.314,470 148,455.475 148,443L148,268L78,269Z" style="fill:none;stroke:#dcdce5;stroke-width:4.67px;"/>
+                <path d="M78,269L78,300L115,300L115,439L79,439L79,417L48,417L48,441C48,452.777 57.518,470 70,470L118,470C132.314,470 148,455.475 148,443L148,268L78,269Z" style="fill:none;stroke:#dcdce5;stroke-width:15px;"/>
             </g>
             <g transform="matrix(1,0,0,1,-965.729,27)">
-                <path d="M174,269L174,470L204,470L204,405.42L242,381.42L242,470L273,470L273,269L242,269L242,341.42L205,365.42L205,269L174,269Z" style="fill:none;stroke:#dcdce5;stroke-width:4.67px;"/>
+                <path d="M174,269L174,470L204,470L204,405.42L242,381.42L242,470L273,470L273,269L242,269L242,341.42L205,365.42L205,269L174,269Z" style="fill:none;stroke:#dcdce5;stroke-width:15px;"/>
             </g>
         </g>
     </g>

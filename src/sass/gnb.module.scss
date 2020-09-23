@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+.Navbar {
+    max-height: 80px;
+
+    .Logo {
+        color: $light-primary;
+        height: 40px;
+        font-weight: bold;
+    }
+}

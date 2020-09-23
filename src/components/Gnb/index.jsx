@@ -25,6 +25,8 @@ import {
   MobileMenu,
   ToggleWrapper,
 } from "./styled";
+import logo from "../../resources/JH.svg";
+import styles from "../../sass/gnb.module.scss";
 
 const TOGGLE_MENU = "TOGGLE_MENU";
 const TOGGLE_SUB_MENU = "TOGGLE_SUB_MENU";
@@ -133,10 +135,10 @@ const Gnb = ({
       <MobileMenu isActive={isMenuOpened} isSubActive={isSubMenuClosed}>
         <Background onClick={toggleMenu} isActive={isMenuOpened} />
         <MobileMenus>
-          <ul>
+          <ul className={styles.Navbar}>
             <ListMenu>
               <StyledLink to="/" onClick={toggleMenu}>
-                <Home />
+                <img className={styles.Logo} src={logo} alt="Home" />
               </StyledLink>
             </ListMenu>
             <ListMenu>
@@ -250,11 +252,11 @@ const Gnb = ({
           </ul>
         </MobileMenus>
       </MobileMenu>
-      <ToggleWrapper>
+      {/* <ToggleWrapper>
         <span role="img" aria-label="change-theme" onClick={toggleTheme}>
           <Adjust className={isDracula ? `dark` : null} />
         </span>
-      </ToggleWrapper>
+      </ToggleWrapper> */}
       <Hamburger
         className={`hamburger hamburger--spin js-hamburger ${
           isMenuOpened ? "is-active" : ""
@@ -265,10 +267,10 @@ const Gnb = ({
           <div className="hamburger-inner" />
         </div>
       </Hamburger>
-      <List>
+      <List className={styles.Navbar}>
         <ListMenu>
           <StyledLink to="/">
-            <Home />
+            <img className={styles.Logo} src={logo} alt="Home" />
           </StyledLink>
         </ListMenu>
         <ListMenu>
