@@ -1,4 +1,4 @@
-const { TITLE, AUTHOR, SITE_URL, DESCRIPTION } = require('./src/constants');
+const { TITLE, AUTHOR, SITE_URL, DESCRIPTION } = require("./src/constants");
 
 const siteMetadata = {
   title: TITLE,
@@ -10,20 +10,20 @@ const siteMetadata = {
 
 module.exports = {
   siteMetadata,
-  pathPrefix: '/',
+  pathPrefix: "/",
   plugins: [
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: "pages",
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/resources`,
-        name: 'resources',
+        name: "resources",
       },
     },
     {
@@ -35,74 +35,74 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 640,
             },
           },
           {
-            resolve: 'gatsby-remark-responsive-iframe',
+            resolve: "gatsby-remark-responsive-iframe",
             options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
+              wrapperStyle: "margin-bottom: 1.0725rem",
             },
           },
           {
-            resolve: 'gatsby-remark-prismjs',
+            resolve: "gatsby-remark-prismjs",
             options: {
-              classPrefix: 'hljs-',
+              classPrefix: "hljs-",
             },
           },
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
         ],
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: 'UA-160190728-1',
+        trackingId: "UA-160190728-1",
       },
     },
-    'gatsby-plugin-offline',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
+    "gatsby-plugin-offline",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-styled-components",
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: 'Jake Hayes',
-        short_name: 'Jake Hayes',
-        start_url: '/',
-        background_color: '#fff',
-        theme_color: '#3B9CFF',
-        display: 'minimal-ui',
-        icon: 'src/images/icon.png',
+        name: "Jake Hayes",
+        short_name: "Jake Hayes",
+        start_url: "/",
+        background_color: "#fff",
+        theme_color: "#3B9CFF",
+        display: "minimal-ui",
+        icon: "src/images/JH.png",
         crossOrigin: `use-credentials`,
       },
     },
-    'gatsby-plugin-sitemap',
+    "gatsby-plugin-sitemap",
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
         host: SITE_URL,
         sitemap: `${SITE_URL}/sitemap.xml`,
-        policy: [{ userAgent: '*', allow: '/' }],
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        // Change `siteUrl` to your domain 
+        // Change `siteUrl` to your domain
         siteUrl: `https://jakehayes.net`,
-        
+
         // Query string parameters are inclued by default.
-        // Set `stripQueryString: true` if you don't want `/blog` 
+        // Set `stripQueryString: true` if you don't want `/blog`
         // and `/blog?tag=foobar` to be indexed separately
-        stripQueryString: true
-      }
+        stripQueryString: true,
+      },
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -122,15 +122,15 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
+                });
+              });
             },
             query: `
               {
@@ -157,10 +157,10 @@ module.exports = {
             // if `string` is used, it will be used to create RegExp and then test if pathname
             // of current page satisfied this regular expression;
             // if not provided or `undefined`, all pages will have feed reference inserted
-            match: "^/tech/",
+            // match: "^/tech/",
           },
         ],
-      }
+      },
     },
     `gatsby-plugin-sass`,
   ],
