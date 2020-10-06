@@ -1,126 +1,238 @@
 @import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
-.Main {
-  @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+.EntirePage {
   position: absolute;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
-  margin: auto;
-  width: 80%;
-  height: 1.5em;
-  line-height: 1.5em;
-  font-size: 48px;
-  font-size: 10vw;
-  font-family: 'Permanent Marker', cursive;
-  text-align: center;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.PortfolioContainer {
-  margin: 0 auto;
-  margin-top: 2em;
-  max-width: 1200px;
+  width: 100vw;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 0.5rem;
+  flex-flow: column nowrap;
+  background-color: $dark-primary;
+  padding-bottom: 50px;
 
-  .PortfolioCard {
-    margin: 0.5rem;
-    position: relative;
-    height: $card-height-mobile;
+  @media (max-width: $mobile-screen-width) {
+    padding-bottom: 0;
+  }
 
-    @media (min-width: 500px) {
-      height: $card-height-large-screen;
+
+  .Main {
+    margin: auto;
+    line-height: 1.5em;
+    font-size: 48px;
+    height: 100vh;
+    font-family: 'Permanent Marker', sans-serif;
+    text-align: center;
+    white-space: normal;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100vw;
+
+    @media (max-width: $mobile-screen-width) {
+      flex-direction: column;
+      gap: 40px;
+      height: auto;
+      font-size: 36px;
+      padding-top: 100px;
+      margin: 0;
     }
 
-    overflow: hidden;
-    border-radius: 0.5rem;
-    flex: 1;
-    min-width: 275px;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    transition: all 0.3s ease-in-out;
-    background: #bdc3c7;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom,
-      #2c3e50,
-      #bdc3c7);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom,
-      #2c3e50,
-      #bdc3c7);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .primaryText {
+      display: flex;
+      flex-flow: column nowrap;
+      padding-bottom: 0;
+      width: 50vw;
+      justify-content: center;
+      gap: 20px;
 
-    &:hover {
-      -webkit-transform: scale(1.05);
-      -moz-transform: scale(1.05);
-      -o-transform: scale(1.05);
-      transform: scale(1.05);
-      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
-    }
+      @media (max-width: $mobile-screen-width) {
+        width: 90vw;
+        height: auto;
+        margin: auto;
+      }
 
-    &>a>img {
-      width: 110%;
-      height: 110%;
-      top: -5%;
-      left: -5%;
-      display: block;
-      object-fit: cover;
-      transition: transform 3s ease;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      position: relative;
-      z-index: -1;
-      transition: all 0.3s ease-in-out;
+      a {
+        margin-top: 50px;
 
-      &:hover {
-        scale: 1.15;
+        span {
+          background-color: $main-accent;
+          padding: 5px 30px;
+          border-radius: 20px;
+          font-size: 48px;
+          width: fit-content;
+          align-self: center;
+          color: $light-primary;
+          transition: 5ms;
+
+          &:hover {
+            cursor: pointer;
+            background-color: $accent-hover;
+          }
+
+          @media (max-width: $mobile-screen-width) {
+            font-size: 36px;
+          }
+        }
+
+        @media (max-width: $mobile-screen-width) {
+          margin-top: 30px;
+        }
       }
     }
 
-    .CardTitle {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      bottom: 0rem;
-      padding: 1rem;
-      color: white;
-      vertical-align: bottom;
+    .image {
+      max-height: 80vh;
+      width: 50vw;
+      align-self: center;
+
+      @media (max-width: $mobile-screen-width) {
+        width: 100vw;
+        margin-bottom: 25px;
+        left: 5%;
+      }
+
+      img {
+        box-shadow: 30px 30px $main-accent;
+        max-height: 100%;
+        height: 500px;
+        vertical-align: middle;
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+        border-radius: 20px;
+
+        @media (max-width: $mobile-screen-width) {
+          height: auto;
+          width: 75%;
+          box-shadow: 0px 25px 0px 0px $main-accent;
+        }
+      }
+    }
+  }
+
+  .PortfolioHeader {
+    h1 {
+      font-family: 'Permanent Marker', sans-serif;
+      font-size: 72px;
+      float: left;
+      padding-left: 100px;
+      padding-top: 50px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+      @media (max-width: $mobile-screen-width) {
+        padding-left: 5%;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .PortfolioContainer {
+    margin: 0 auto;
+    margin-top: 2em;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0.5rem;
+
+
+
+    .PortfolioCard {
+      margin: 0.5rem;
+      position: relative;
+      height: $card-height-mobile;
+
+      @media (min-width: 500px) {
+        height: $card-height-large-screen;
+      }
+
+      overflow: hidden;
+      border-radius: 0.5rem;
+      flex: 1;
+      min-width: 275px;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      transition: all 0.3s ease-in-out;
+      background: #bdc3c7;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom,
+        #2c3e50,
+        #bdc3c7);
+      /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(to bottom,
-          hsla(0, 0%, 0%, 0) 0%,
-          hsla(0, 0%, 0%, 0.009) 11.7%,
-          hsla(0, 0%, 0%, 0.034) 22.1%,
-          hsla(0, 0%, 0%, 0.072) 31.2%,
-          hsla(0, 0%, 0%, 0.123) 39.4%,
-          hsla(0, 0%, 0%, 0.182) 46.6%,
-          hsla(0, 0%, 0%, 0.249) 53.1%,
-          hsla(0, 0%, 0%, 0.32) 58.9%,
-          hsla(0, 0%, 0%, 0.394) 64.3%,
-          hsla(0, 0%, 0%, 0.468) 69.3%,
-          hsla(0, 0%, 0%, 0.54) 74.1%,
-          hsla(0, 0%, 0%, 0.607) 78.8%,
-          hsla(0, 0%, 0%, 0.668) 83.6%,
-          hsla(0, 0%, 0%, 0.721) 88.7%,
-          hsla(0, 0%, 0%, 0.762) 94.1%,
-          hsla(0, 0%, 0%, 0.79) 100%);
-      transition: background-color 1.5s ease;
-      font-family: $primary-font;
-      font-weight: bold;
-      font-size: 1.5em;
+        #2c3e50,
+        #bdc3c7);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-      transition: color 1s ease;
-      display: flex;
+      &:hover {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+        box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
+      }
 
-      &>span {
-        align-self: flex-end;
+      &>a>img {
+        width: 110%;
+        height: 110%;
+        top: -5%;
+        left: -5%;
+        display: block;
+        object-fit: cover;
+        transition: transform 3s ease;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: relative;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          scale: 1.15;
+        }
+      }
+
+      .CardTitle {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 0rem;
+        padding: 1rem;
+        color: white;
+        vertical-align: bottom;
+        background: linear-gradient(to bottom,
+            hsla(0, 0%, 0%, 0) 0%,
+            hsla(0, 0%, 0%, 0.009) 11.7%,
+            hsla(0, 0%, 0%, 0.034) 22.1%,
+            hsla(0, 0%, 0%, 0.072) 31.2%,
+            hsla(0, 0%, 0%, 0.123) 39.4%,
+            hsla(0, 0%, 0%, 0.182) 46.6%,
+            hsla(0, 0%, 0%, 0.249) 53.1%,
+            hsla(0, 0%, 0%, 0.32) 58.9%,
+            hsla(0, 0%, 0%, 0.394) 64.3%,
+            hsla(0, 0%, 0%, 0.468) 69.3%,
+            hsla(0, 0%, 0%, 0.54) 74.1%,
+            hsla(0, 0%, 0%, 0.607) 78.8%,
+            hsla(0, 0%, 0%, 0.668) 83.6%,
+            hsla(0, 0%, 0%, 0.721) 88.7%,
+            hsla(0, 0%, 0%, 0.762) 94.1%,
+            hsla(0, 0%, 0%, 0.79) 100%);
+        transition: background-color 1.5s ease;
+        font-family: $primary-font;
+        font-weight: bold;
+        font-size: 1.5em;
+
+        transition: color 1s ease;
+        display: flex;
+
+        &>span {
+          align-self: flex-end;
+        }
       }
     }
   }
