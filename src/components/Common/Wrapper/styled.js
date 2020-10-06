@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const WrapperOuter = styled.section`
   position: relative;
@@ -17,5 +17,5 @@ export const WrapperInner = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  ${({ isHome }) => (isHome ? '' : 'padding: 100px 0 0;')}
+  ${({ isHome }) => (isHome ? "" : "padding: 100px 0 0;")}
 `;

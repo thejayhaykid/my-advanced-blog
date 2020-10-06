@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { ThemeProvider } from "styled-components";
 import Gnb from "~/components/Gnb";
-import Theme from "../Common/Theme";
 import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
 import { Wrapper } from "./styled";
 
