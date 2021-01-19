@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   background-color: ${({ theme: { backgroundColor } }) => backgroundColor};
   min-height: 100vh;
   padding-bottom: 4rem;
+  font-family: sans-serif;
 
   @media print {
     & > nav,
