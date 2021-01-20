@@ -52,27 +52,13 @@ const Wrapper = styled.div`
 const ContactPage = (props) => {
   const [isDracula, setDracula] = useState(Theme.darkMode);
   const { location, categories, postInformations, hasPortfolio } = props;
-  const theme = isDracula
-    ? {
-        color: WHITE_COLOR,
-        backgroundColor: BLACK_COLOR,
-      }
-    : {
-        color: BLACK_COLOR,
-        backgroundColor: WHITE_COLOR,
-      };
+  const theme = {
+    color: WHITE_COLOR,
+    backgroundColor: BLACK_COLOR,
+  };
 
   const toggleTheme = () => {
-    if (isDracula) {
-      if (global.localStorage) {
-        global.localStorage.setItem("theme", "normal");
-      }
-    } else {
-      if (global.localStorage) {
-        global.localStorage.setItem("theme", "dracula");
-      }
-    }
-    setDracula(!isDracula);
+    setDracula(true);
   };
 
   return (
