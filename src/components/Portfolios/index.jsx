@@ -14,7 +14,7 @@ const Portfolios = ({
   <Wrapper>
     <Helmet>
       <title>{`${PREFIX}PORTFOLIOS`}</title>
-      <meta name="og:title" content={`${PREFIX}PORTFOLIOS`} />
+      <meta name="og:title" content={`${PREFIX}Portfolios`} />
     </Helmet>
     <div className={styles.PortfolioContainer}>
       {portfolios.map(
