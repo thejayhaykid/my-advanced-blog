@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import Wrapper from "~/components/Common/Wrapper";
 import { TITLE } from "~/constants";
 import styles from "../../sass/home.module.scss";
+import mainImage from "../../resources/homepage_main.png";
 
 const Home = ({ portfolios }) => (
   <>
@@ -12,12 +13,22 @@ const Home = ({ portfolios }) => (
       <title>{TITLE}</title>
       <meta name="og:title" content={TITLE} />
     </Helmet>
-    <Wrapper isHome>
+    <div className={styles.EntirePage}>
       <div className={styles.Main}>
-        <h1>Hello everybody!</h1>
+        <div className={styles.image}>
+          <img src={mainImage} className={styles.actualImage} />
+        </div>
+        <div className={styles.primaryText}>
+          <h1>Hi, I'm Jake!</h1>
+          <h1>I'm a Developer, Designer, and Digital Creative</h1>
+          <a href="/pages/1">
+            <span className={styles.blogButton}>Blog</span>
+          </a>
+        </div>
       </div>
-    </Wrapper>
-    {portfolios.length >= 4 ? (
+      <div className={styles.PortfolioHeader}>
+        <h1>Portfolios</h1>
+      </div>
       <div className={styles.PortfolioContainer}>
         {portfolios.slice(0, 4).map(
           ({
@@ -61,7 +72,7 @@ const Home = ({ portfolios }) => (
           }
         )}
       </div>
-    ) : null}
+    </div>
   </>
 );
 

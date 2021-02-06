@@ -38,7 +38,7 @@ export default class HTML extends Component {
           {/* <meta property="og:url" content="" /> */}
           {/* <meta property="og:image" content="" /> */}
           <meta property="og:description" content={DESCRIPTION} />
-          <meta property="og:locale" content="ko_KR" />
+          <meta property="og:locale" content="en_US" />
           {/* <meta name="msapplication-TileImage" content="" /> */}
           {/* <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="" /> */}
           {/* <link rel="apple-touch-icon" type="image/vnd.microsoft.icon" href="" /> */}

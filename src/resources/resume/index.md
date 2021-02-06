@@ -16,8 +16,9 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 
 ### Nationwide, Columbus, OH / 2020 - Present
 
-- React Web Developer using Typescript
+- React Web Developer using Typescript on the biggest internal app at Nationwide
 - Helped migrate the Web App from Sharepoint to AWS
+- Participated in the Nationwide Hackathon, completed a front-end React app and was lead designer. App place in top 25% of the company
 - More information coming
 
 ## Consultant
@@ -26,12 +27,7 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 
 - Supported and developed a Python application that receives GPS data sent in from the field, then processes the data using Arcpy, and stores it for use into an Oracle SQL Databases
 - Developed a Python script to automate the creation of the standard testing Excel documentation that the client uses
-- Maintained an internal React web app with an ASP.NET backend
 - Began process of enhancing React app with various features such as state management with Redux, adding Bootstrap to speed up UI development, and a router to unite the application to being a Single Page App (SPA)
-- Experienced in completing the entire software development lifecycle using both the agile and waterfall development methods
-- A year into the position, I was asked to onboard and train new hires that had no experience working on a production environment
-- Prompted from Associate Consultant to Consultant a year ahead of the typical promotional schedule
-- Received an award for showing initiative with a new and unfamiliar system
 
 ## AppleCare at Home Senior Advisor
 
