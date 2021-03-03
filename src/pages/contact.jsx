@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState, useEffect } from "react";
 import { Link } from "gatsby";
 import Helmet from "react-helmet";
 import styled from "styled-components";
@@ -9,6 +9,7 @@ import { ThemeProvider } from "styled-components";
 import Gnb from "~/components/Gnb";
 import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
 import styles from "../sass/contact.module.scss";
+import queryString from "query-string";
 
 const Wrapper = styled.div`
   top: 0;
@@ -61,6 +62,35 @@ const ContactPage = (props) => {
     setDracula(true);
   };
 
+  const [conName, setName] = useState("");
+  const [conEmail, setEmail] = useState("");
+  const [conSubject, setSubject] = useState("");
+  const [conMessage, setMessage] = useState("");
+
+  const inputName = (e) => { setName(e.target.value) };
+  const inputEmail = (e) => { setEmail(e.target.value) };
+  const inputSubject = (e) => { setSubject(e.target.value) };
+  const inputMessage = (e) => { setMessage(e.target.value) };
+
+  const queryParameters = queryString.parse(props.location.search);
+
+  useEffect(() => {
+    let urlAdditions = ""
+    if (queryParameters.subject && queryParameters.subject.length > 0) {
+      urlAdditions = queryParameters.subject.toString()
+    }
+
+    if (queryParameters.app && queryParameters.app.length > 0) {
+      if (urlAdditions.length > 0) {
+        urlAdditions = `${urlAdditions} ${queryParameters.app.toString()}`
+      } else {
+        urlAdditions = queryParameters.app.toString()
+      }
+    }
+
+    setSubject(`${urlAdditions}${conSubject}`);
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <Wrapper>
@@ -97,6 +127,8 @@ const ContactPage = (props) => {
               name="name"
               id="name"
               className={styles.nameInput}
+              onChange={inputName}
+              value={conName}
             />
           </label>
           <label className={styles.emailLabel}>
@@ -106,6 +138,8 @@ const ContactPage = (props) => {
               name="email"
               id="email"
               className={styles.emailInput}
+              onChange={inputEmail}
+              value={conEmail}
             />
           </label>
           <label className={styles.subjectLabel}>
@@ -115,6 +149,8 @@ const ContactPage = (props) => {
               name="subject"
               id="subject"
               className={styles.subjectInput}
+              onChange={inputSubject}
+              value={conSubject}
             />
           </label>
           <label className={styles.messageLabel}>
@@ -124,6 +160,8 @@ const ContactPage = (props) => {
               id="message"
               rows="5"
               className={styles.messageInput}
+              onChange={inputMessage}
+              value={conMessage}
             />
           </label>
           <div className={styles.buttons}>
