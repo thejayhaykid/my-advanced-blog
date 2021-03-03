@@ -4,6 +4,7 @@ title: "Resume"
 date: "2020-03-09T00:00:00.000Z"
 path: "/resume/"
 ---
+
 # SUMMARY
 
 I am a Software Developer, freelance graphic and logo designer, video editor, web developer by night specializing in sports. I am open to new challenges of any kind but ready to help your team digitally in multiple ways.
@@ -12,9 +13,16 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 
 # EXPERIENCE
 
+## Software Consultant
+
+### Daugherty Business Solutions, Columbus, OH / 2021 - Present
+
+- One of the first 15 consultants hired by Daugherty's new [Columbus](https://www.daugherty.com/columbus/) branch. [Daugherty](https://www.daugherty.com/) is a respected software consulting firm with multiple branches based out of St. Louis, MO and primarily servicing Fortune 500 companies.
+- Worked on a Full-stack modernization project to migrate a Mainframe application with a basic web frontend to become a Spring Boot backend/React frontend application for the Customer Care line of business.
+
 ## Senior Developer
 
-### Nationwide, Columbus, OH / 2020 - Present
+### Nationwide, Columbus, OH / 2020 - 2021
 
 - React Web Developer using Typescript on the biggest internal app at Nationwide
 - Helped migrate the Web App from Sharepoint to AWS
@@ -34,7 +42,7 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 ### Apple, Inc., Cupertino, CA / 2014 – 2017
 
 - Resolved matters related to technical difficulties and product use/misuse to ensure customer satisfaction
-- Promoted to top tier of advising to collect data and logs that would be distributed to the engineering team for further research and problem solving 
+- Promoted to top tier of advising to collect data and logs that would be distributed to the engineering team for further research and problem solving
 - Consistently recognized as Top Performer based on customer surveys
 
 ---
