@@ -7,7 +7,7 @@ path: "/resume/"
 
 # SUMMARY
 
-I am a Software Developer, freelance graphic and logo designer, video editor, web developer by night specializing in sports. I am open to new challenges of any kind but ready to help your team digitally in multiple ways.
+I am a Software Engineer with a lot of varying interests. I strive to be the ideal T shaped developer, with a wide breadth of knowledge but also a deep wealth of knowledge on specific subjects. My primary focus is full stack web and mobile applications, but I've been known to dabble in all kinds of software.
 
 ---
 
@@ -17,8 +17,8 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 
 ### Daugherty Business Solutions, Columbus, OH / 2021 - Present
 
-- One of the first 15 consultants hired by Daugherty's new [Columbus](https://www.daugherty.com/columbus/) branch. [Daugherty](https://www.daugherty.com/) is a respected software consulting firm with multiple branches based out of St. Louis, MO and primarily servicing Fortune 500 companies.
-- Worked on a Full-stack modernization project to migrate a Mainframe application with a basic web frontend to become a Spring Boot backend/React frontend application for the Customer Care line of business.
+- One of the first 15 consultants hired by Daugherty's new [Columbus](https://www.daugherty.com/columbus/) branch. [Daugherty](https://www.daugherty.com/) is a respected software consulting firm with multiple branches based out of St. Louis, MO and primarily servicing Fortune 500 companies
+- Worked on a Full-stack modernization project to migrate a Mainframe application with a basic web frontend to become a Spring Boot backend/React frontend application for the Customer Care line of business
 
 ## Senior Developer
 
@@ -35,6 +35,7 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 
 - Supported and developed a Python application that receives GPS data sent in from the field, then processes the data using Arcpy, and stores it for use into an Oracle SQL Databases
 - Developed a Python script to automate the creation of the standard testing Excel documentation that the client uses
+- Maintained a legacy mainframe application, learning all necessary technologies on the job including COBOL, CICS, JCL, and overnight batch applications
 - Began process of enhancing React app with various features such as state management with Redux, adding Bootstrap to speed up UI development, and a router to unite the application to being a Single Page App (SPA)
 
 ## AppleCare at Home Senior Advisor
