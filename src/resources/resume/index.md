@@ -5,12 +5,6 @@ date: "2020-03-09T00:00:00.000Z"
 path: "/resume/"
 ---
 
-# SUMMARY
-
-I am a Software Engineer with a lot of varying interests. I strive to be the ideal T shaped developer, with a wide breadth of knowledge but also a deep wealth of knowledge on specific subjects. My primary focus is full stack web and mobile applications, but I've been known to dabble in all kinds of software.
-
----
-
 # EXPERIENCE
 
 ## Software Consultant
