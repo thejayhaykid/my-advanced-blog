@@ -2,6 +2,8 @@
 
 > Gatsby starter for advanced blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/67f9dfd1-64b0-4280-ad92-1a69907af465/deploy-status)](https://app.netlify.com/sites/jakehayes/deploys)
+
 ## Install
 
 ```
