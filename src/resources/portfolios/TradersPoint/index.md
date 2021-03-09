@@ -24,6 +24,7 @@ images:
     "images/portfolio/traders-point/Promethean-board-v2.0.png",
     "images/portfolio/traders-point/SamCarnes.png",
     "images/portfolio/traders-point/Tri-County-v1.0.png",
+    "images/portfolio/traders-point/Caleb-Ott-IFCA-All-Region-v1.1.png",
   ]
 ---
 
