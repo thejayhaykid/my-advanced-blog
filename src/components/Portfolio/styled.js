@@ -19,7 +19,7 @@ export const Wrapper = styled(SimpleWrapper)`
 
 export const PortfolioDescription = styled.section`
   float: left;
-  padding: 0 0 0 36px;
+  padding: 0 15px 0 36px;
   width: 20%;
   font-family: lato, Arial, Helvetica, sans-serif;
 
