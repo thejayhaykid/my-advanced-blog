@@ -10,9 +10,11 @@ import Gnb from "~/components/Gnb";
 import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
 import styles from "../sass/contact.module.scss";
 import queryString from "query-string";
+import toast, { Toaster } from "react-hot-toast";
 
 const Wrapper = styled.div`
   top: 0;
+  font-family: lato, Arial, Helvetica, sans-serif;
   color: ${({ theme: { color } }) => color};
   background-color: ${({ theme: { backgroundColor } }) => backgroundColor};
   min-height: 100vh;
@@ -91,6 +93,30 @@ const ContactPage = (props) => {
     setSubject(`${urlAdditions}${conSubject}`);
   }, [])
 
+  const submitForm = (e) => {
+    toast.promise(
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encodeURI({ "form-name": "contact", "name": conName, "email": conEmail, "subject": conSubject, "message": conMessage })
+      }),
+      {
+        loading: 'Sending message...',
+        success: <b>Message sent!</b>,
+        error: <b>Error sending, please try again</b>
+      }
+    )
+
+    e.preventDefault();
+  }
+
+  const clearClick = () => {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <Wrapper>
@@ -109,6 +135,7 @@ const ContactPage = (props) => {
             className={styles.gnb}
           />
         </nav>
+        <Toaster position="top-center" />
         <div className={styles.emptyDiv}></div>
         <form
           method="post"
@@ -117,6 +144,7 @@ const ContactPage = (props) => {
           name="contact"
           netlify
           className={styles.form}
+          onSubmit={submitForm}
         >
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
@@ -168,7 +196,7 @@ const ContactPage = (props) => {
             <button className={styles.submitButton} type="submit">
               Send
             </button>
-            <input type="reset" value="Clear" className={styles.clearButton} />
+            <button className={styles.clearButton} type="reset" onClick={clearClick}>Clear</button>
           </div>
         </form>
       </Wrapper>
