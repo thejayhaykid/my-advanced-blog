@@ -99,7 +99,7 @@ const ContactPage = (props) => {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encodeURI({ "form-name": "contact", "name": conName, "email": conEmail, "subject": conSubject, "message": conMessage })
-      }),
+      }).then(() => clearClick()),
       {
         loading: 'Sending message...',
         success: <b>Message sent!</b>,
