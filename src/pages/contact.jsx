@@ -98,14 +98,14 @@ const ContactPage = (props) => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encodeURI({ "form-name": "contact", "name": conName, "email": conEmail, "subject": conSubject, "message": conMessage })
+        body: new URLSearchParams({ "form-name": "contact", "name": conName, "email": conEmail, "subject": conSubject, "message": conMessage }).toString()
       }),
       {
         loading: 'Sending message...',
         success: <b>Message sent!</b>,
         error: <b>Error sending, please try again</b>
       }
-    )
+    ).then(clearClick())
 
     e.preventDefault();
   }
