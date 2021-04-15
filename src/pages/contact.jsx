@@ -105,7 +105,7 @@ const ContactPage = (props) => {
         success: <b>Message sent!</b>,
         error: <b>Error sending, please try again</b>
       }
-    )
+    ).then(clearClick())
 
     e.preventDefault();
   }
