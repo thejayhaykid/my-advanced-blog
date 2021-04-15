@@ -38,9 +38,9 @@ const Resume = ({
       <Clearfix>
         <Helmet>
           <title>
-            {`${PREFIX}RESUME`}
+            {`${PREFIX}Resume`}
           </title>
-          <meta name="og:title" content={`${PREFIX}RESUME`} />
+          <meta name="og:title" content={`${PREFIX}Resume`} />
         </Helmet>
         <Clearfix>
           <Button type="button" onClick={printPage}>
@@ -91,22 +91,22 @@ const Resume = ({
             </a>
           ) : null}
           {DEVTO_ID ? (
-            <a 
+            <a
               href={`https://dev.to/${DEVTO_ID}`}
               target="_blank"
               rel="noreferrer noopener"
-              >
-                <FaDev />
-              </a>
+            >
+              <FaDev />
+            </a>
           ) : null}
           {DRIBBBLE_ID ? (
-            <a 
+            <a
               href={`https://dribbble.com/${DRIBBBLE_ID}`}
               target="_blank"
               rel="noreferrer noopener"
-              >
-                <FaDribbble />
-              </a>
+            >
+              <FaDribbble />
+            </a>
           ) : null}
         </SocialInformation>
         <MDInformation>

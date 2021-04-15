@@ -12,7 +12,9 @@ path: "/resume/"
 ### Daugherty Business Solutions, Columbus, OH / 2021 - Present
 
 - One of the first 15 consultants hired by Daugherty's new [Columbus](https://www.daugherty.com/columbus/) branch. [Daugherty](https://www.daugherty.com/) is a respected software consulting firm with multiple branches based out of St. Louis, MO and primarily servicing Fortune 500 companies
-- Worked on a Full-stack modernization project to migrate a Mainframe application with a basic web frontend to become a Spring Boot backend/React frontend application for the Customer Care line of business
+- My first client as a consultant was a Financial company. I helped modernize a customer relationship management system, primarily focused in the calendar and appointment scheduling aspect of application
+  - This application had not been updated for over 15 years and it was a complete re-write from the start
+  - It was full stack development using React and Java Spring
 
 ## Senior Developer
 
@@ -60,9 +62,8 @@ path: "/resume/"
 - Python
 - GitHub
 - JavaScript
-- IBM Mainframe
+- Java/Spring
 - SQL Databases
-- Hierarchical Databases
 
 ---
 
@@ -74,7 +75,7 @@ Geographic Information Science
 The Ohio State University
 2013 – 2017
 
-## DESIGN MINOR
+### DESIGN MINOR
 
 The Ohio State University
 2014-2017

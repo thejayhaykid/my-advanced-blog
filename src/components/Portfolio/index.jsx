@@ -29,8 +29,8 @@ const Portfolio = ({
   return (
     <Wrapper>
       <Helmet>
-        <title>{`${PREFIX}${title.toUpperCase()}`}</title>
-        <meta name="og:title" content={`${PREFIX}${title.toUpperCase()}`} />
+        <title>{`${PREFIX}${title}`}</title>
+        <meta name="og:title" content={`${PREFIX}${title}`} />
       </Helmet>
       <ImageModal
         showModal={showModal}

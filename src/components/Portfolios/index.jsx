@@ -13,8 +13,8 @@ const Portfolios = ({
 }) => (
   <Wrapper>
     <Helmet>
-      <title>{`${PREFIX}PORTFOLIOS`}</title>
-      <meta name="og:title" content={`${PREFIX}PORTFOLIOS`} />
+      <title>{`${PREFIX}Portfolios`}</title>
+      <meta name="og:title" content={`${PREFIX}Portfolios`} />
     </Helmet>
     <div className={styles.PortfolioContainer}>
       {portfolios.map(
@@ -36,7 +36,7 @@ const Portfolios = ({
                       src={require(`~/resources/${image}`)}
                       alt="portfolio"
                       className={styles.PortfolioImage}
-                      // title={title}
+                    // title={title}
                     />
                   )}
                   <div className={styles.CardTitle}>
