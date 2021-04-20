@@ -12,7 +12,7 @@ images: ["images/blog/tech/2021/03/paypr-after.png"]
 
 # Paypr
 
-> This is an Open Source project, you can find the repo [here](https://github.com/thejayhaykid/paypr).
+_This is an Open Source project, you can find the repo [here](https://github.com/thejayhaykid/paypr)._
 
 Have a folder of images that you have your computer shuffle through as your wallpapers? Have some images you want to add that aren't quite the right size or aspect ratio? Have you put pictures in your Chromecast Ambient mode folder and noticed that images that don't quite fit have a cool affect so that it fits on the screen and you can see the whole image?
 
