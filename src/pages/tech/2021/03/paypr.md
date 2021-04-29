@@ -20,6 +20,8 @@ Well this project aims to bring that simple thing that the Chromecast Ambient mo
 
 I used to do this by hand, but thought that I could automate it so I did. I just believe having the image blurred looks better than having whatever the windows color is on the sides when the image doesn't fit.
 
+Give it a try for yourself! Or fork the code and submit a PR if you can think of a helpful feature!
+
 ---
 
 ## Before
