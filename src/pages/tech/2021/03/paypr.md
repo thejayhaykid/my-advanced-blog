@@ -26,7 +26,14 @@ Give it a try for yourself! Or fork the code and submit a PR if you can think of
 
 ## Before
 
+![Before](images/blog/tech/2021/03/paypr-after.png)
+![Before](../../../resource/images/blog/tech/2021/03/paypr-before.png)
+![Before](../../../../resource/images/blog/tech/2021/03/paypr-before.png)
 ![Before](../../../../../resource/images/blog/tech/2021/03/paypr-before.png)
+![Before](../../../../../../resource/images/blog/tech/2021/03/paypr-before.png)
+![Before](../../../../../../../resource/images/blog/tech/2021/03/paypr-before.png)
+![Before](../../../../../../../../resource/images/blog/tech/2021/03/paypr-before.png)
+![Before](../../../../../../../../../resource/images/blog/tech/2021/03/paypr-before.png)
 
 ## After
 
