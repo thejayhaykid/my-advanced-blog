@@ -26,7 +26,7 @@ Give it a try for yourself! Or fork the code and submit a PR if you can think of
 
 ## Before
 
-![Before 4](../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
+![Before](../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
 
 ## After
 
