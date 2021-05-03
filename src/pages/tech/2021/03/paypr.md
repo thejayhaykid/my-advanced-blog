@@ -5,7 +5,7 @@ lastmod: 2021-03-23
 summary: "A script to make a perfectly sized wallpaper from any image."
 tags: ["Python", "pytest", "pillow", "click"]
 categories: ["Python"]
-path: "/tech/2021/04/paypr"
+path: "/tech/paypr"
 category: "Programming"
 images: ["images/blog/tech/2021/03/paypr-after.png"]
 ---
@@ -26,8 +26,8 @@ Give it a try for yourself! Or fork the code and submit a PR if you can think of
 
 ## Before
 
-![Before](../../../../resource/images/blog/tech/2021/03/paypr-before.png)
+![Before 4](../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
 
 ## After
 
-![After](../../../../resource/images/blog/tech/2021/03/paypr-after.png)
+![After](../../../../resources/images/blog/tech/2021/03/paypr-after.png)
