@@ -26,20 +26,8 @@ Give it a try for yourself! Or fork the code and submit a PR if you can think of
 
 ## Before
 
-![Before](images/blog/tech/2021/03/paypr-after.png)
-![Before](static/images/blog/tech/2021/03/paypr-after.png)
-![Before](./images/blog/tech/2021/03/paypr-after.png)
-![Before 3](../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
 ![Before 4](../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
-![Before 5](../../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
-![Before 6](../../../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
-![Before 7](../../../../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
-![Before 8](../../../../../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
-![Before 9](../../../../../../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
-![Before 10](../../../../../../../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
-![Before 11](../../../../../../../../../../../resources/images/blog/tech/2021/03/paypr-before.jpg)
-![Before](src/resources/images/blog/tech/2021/03/paypr-before.jpg)
 
 ## After
 
-![After](../../../../../resource/images/blog/tech/2021/03/paypr-after.png)
+![After](../../../../resources/images/blog/tech/2021/03/paypr-after.png)
