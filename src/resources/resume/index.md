@@ -15,15 +15,18 @@ path: "/resume/"
 - My first client as a consultant was a Financial company. I helped modernize a customer relationship management system, primarily focused in the calendar and appointment scheduling aspect of application
   - This application had not been updated for over 15 years and it was a complete re-write from the start
   - It was full stack development using React and Java Spring
+- Columbus Branch leader for the Health & Wellness employee engagement group
+- Participated on the leadership committee for the new hire buddy program for the entire company
+- Organized and directed work social events such as trivia lunches and after-work happy hours
 
 ## Senior Developer
 
 ### Nationwide, Columbus, OH / 2020 - 2021
 
-- React Web Developer using Typescript on the biggest internal app at Nationwide
-- Helped migrate the Web App from Sharepoint to AWS
+- Full-stack Web Developer using React and Typescript on the biggest internal app at Nationwide
+- Helped migrate the Web App from Sharepoint to an AWS Kubernetes cluster with a CI/CD pipeline using Concourse and Harness
+- Used multiple deployment strategies including Blue/Green and Canary deployments
 - Participated in the Nationwide Hackathon, completed a front-end React app and was lead designer. App place in top 25% of the company
-- More information coming
 
 ## Consultant
 
