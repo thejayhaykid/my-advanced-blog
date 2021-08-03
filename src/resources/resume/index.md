@@ -5,11 +5,7 @@ date: "2020-03-09T00:00:00.000Z"
 path: "/resume/"
 ---
 
-# SUMMARY
-
-I am a Software Developer, freelance graphic and logo designer, video editor, web developer by night specializing in sports. I am open to new challenges of any kind but ready to help your team digitally in multiple ways.
-
----
+# EXPERIENCE
 
 ## Software Engineering Consultant
 
@@ -39,6 +35,7 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 
 - Supported and developed a Python application that receives GPS data sent in from the field, then processes the data using Arcpy, and stores it for use into an Oracle SQL Databases
 - Developed a Python script to automate the creation of the standard testing Excel documentation that the client uses
+- Maintained a legacy mainframe application, learning all necessary technologies on the job including COBOL, CICS, JCL, and overnight batch applications
 - Began process of enhancing React app with various features such as state management with Redux, adding Bootstrap to speed up UI development, and a router to unite the application to being a Single Page App (SPA)
 
 ## AppleCare at Home Senior Advisor
@@ -72,7 +69,6 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 - JavaScript
 - Java with Spring Boot
 - SQL Databases
-- Hierarchical Databases
 
 ---
 
@@ -84,7 +80,7 @@ Geographic Information Science
 The Ohio State University
 2013 – 2017
 
-## DESIGN MINOR
+### DESIGN MINOR
 
 The Ohio State University
 2014-2017
