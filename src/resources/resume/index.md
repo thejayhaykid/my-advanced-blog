@@ -7,26 +7,27 @@ path: "/resume/"
 
 # EXPERIENCE
 
-## Software Consultant
+## Software Engineering Consultant
 
 ### Daugherty Business Solutions, Columbus, OH / 2021 - Present
 
-- One of the first 15 consultants hired by Daugherty's new [Columbus](https://www.daugherty.com/columbus/) branch. [Daugherty](https://www.daugherty.com/) is a respected software consulting firm with multiple branches based out of St. Louis, MO and primarily servicing Fortune 500 companies
-- My first client as a consultant was a Financial company. I helped modernize a customer relationship management system, primarily focused in the calendar and appointment scheduling aspect of application
-  - This application had not been updated for over 15 years and it was a complete re-write from the start
-  - It was full stack development using React and Java Spring
-- Columbus Branch leader for the Health & Wellness employee engagement group
-- Participated on the leadership committee for the new hire buddy program for the entire company
-- Organized and directed work social events such as trivia lunches and after-work happy hours
+- One of the first 15 consultants hired by Daugherty's new [Columbus](https://www.daugherty.com/columbus/) branch
+- Current client is a Fortune 500 Financial Company
+- Modernized customer relationship management application for the first time in fifteen years
+- Deployed full-stack development using React and Java Spring
+- Columbus Branch leader for the Health & Wellness Employee Engagement Group
+- Participated on the leadership committee for the New Hire Buddy Program for the entire company
+- Organized and directed virtual social events for engagement during remote assignments
 
 ## Senior Developer
 
 ### Nationwide, Columbus, OH / 2020 - 2021
 
-- Full-stack Web Developer using React and Typescript on the biggest internal app at Nationwide
-- Helped migrate the Web App from Sharepoint to an AWS Kubernetes cluster with a CI/CD pipeline using Concourse and Harness
+- Full-stack React Web Developer using Typescript on the biggest internal app at Nationwide
+- Assisted in migrating the Web App from Sharepoint to AWS Kubernetes cluster with a CI/CD pipeline using Concourse and Harness
+- Participated in the Nationwide Hackathon and design placed in top 25% of the company
+- Lead design on a completed front-end React app
 - Used multiple deployment strategies including Blue/Green and Canary deployments
-- Participated in the Nationwide Hackathon, completed a front-end React app and was lead designer. App place in top 25% of the company
 
 ## Consultant
 
@@ -60,12 +61,13 @@ path: "/resume/"
 
 - React
 - TypeScript
+- UI/UX Design
 - Docker
 - AWS
 - Python
 - GitHub
 - JavaScript
-- Java/Spring
+- Java with Spring Boot
 - SQL Databases
 
 ---

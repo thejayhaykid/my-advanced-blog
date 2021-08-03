@@ -3,14 +3,14 @@ title: "Babysitter Kata"
 date: 2019-11-26
 lastmod: 2019-11-26
 summary: "Using test driven development to solve a problem."
-tags: ['Python','kata','test-driven-development','pytest']
-categories: ['Python']
-path: "/tech/2020/03/"
+tags: ["Python", "kata", "test-driven-development", "pytest"]
+categories: ["Python"]
+path: "/tech/2020/03/kata"
 category: "Programming"
 images: ["images/blog/tech/2020/03/kata-cover-image.jpg"]
 ---
 
-*Note: This post is still a work in progress.*
+_Note: This post is still a work in progress._
 
 [Description of the Problem](https://github.com/PillarTechnology/kata-babysitter)
 
@@ -24,7 +24,7 @@ images: ["images/blog/tech/2020/03/kata-cover-image.jpg"]
 
 For this exercise I was given the option to select my own language from a list, I decided to go with Python as it is one of the languages I am most comfortable with. After spending over a year listening to both the [PythonBytes](https://pythonbytes.fm/) and [Test & Code](https://testandcode.com/) podcasts, I had heard enough from [Brian Okken](https://twitter.com/brianokken) to use [pytest](https://docs.pytest.org/en/latest/) as the "test" part of my test driven development.
 
-Having never used pytest before, I decided to buy [Brian's book](https://pragprog.com/book/bopytest/python-testing-with-pytest) so that I could get a good foundation of how pytest specifically worked. As a side note, I would recommend pytest if you are working on a python project. So I spent a couple of hours storming through that book so that I would have some idea of what I was doing. 
+Having never used pytest before, I decided to buy [Brian's book](https://pragprog.com/book/bopytest/python-testing-with-pytest) so that I could get a good foundation of how pytest specifically worked. As a side note, I would recommend pytest if you are working on a python project. So I spent a couple of hours storming through that book so that I would have some idea of what I was doing.
 
 After establishing that I was going to use pytest, I planned out the rest of what I was going to use for this project. To make it easier to develop on multiple machines I decided to use virtualenv. This way to use this package on another machine, all I would need to do (after using pip to install virtualenv) is install the packages in the requirements.txt file using `pip install -r requirements.txt` and then the package is ready to go.
 

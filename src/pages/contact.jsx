@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState, useEffect } from "react";
 import { Link } from "gatsby";
 import Helmet from "react-helmet";
 import styled from "styled-components";
@@ -9,9 +9,12 @@ import { ThemeProvider } from "styled-components";
 import Gnb from "~/components/Gnb";
 import { BLACK_COLOR, WHITE_COLOR } from "~/components/Common/constants";
 import styles from "../sass/contact.module.scss";
+import queryString from "query-string";
+import toast, { Toaster } from "react-hot-toast";
 
 const Wrapper = styled.div`
   top: 0;
+  font-family: lato, Arial, Helvetica, sans-serif;
   color: ${({ theme: { color } }) => color};
   background-color: ${({ theme: { backgroundColor } }) => backgroundColor};
   min-height: 100vh;
@@ -61,6 +64,59 @@ const ContactPage = (props) => {
     setDracula(true);
   };
 
+  const [conName, setName] = useState("");
+  const [conEmail, setEmail] = useState("");
+  const [conSubject, setSubject] = useState("");
+  const [conMessage, setMessage] = useState("");
+
+  const inputName = (e) => { setName(e.target.value) };
+  const inputEmail = (e) => { setEmail(e.target.value) };
+  const inputSubject = (e) => { setSubject(e.target.value) };
+  const inputMessage = (e) => { setMessage(e.target.value) };
+
+  const queryParameters = queryString.parse(props.location.search);
+
+  useEffect(() => {
+    let urlAdditions = ""
+    if (queryParameters.subject && queryParameters.subject.length > 0) {
+      urlAdditions = queryParameters.subject.toString()
+    }
+
+    if (queryParameters.app && queryParameters.app.length > 0) {
+      if (urlAdditions.length > 0) {
+        urlAdditions = `${urlAdditions} ${queryParameters.app.toString()}`
+      } else {
+        urlAdditions = queryParameters.app.toString()
+      }
+    }
+
+    setSubject(`${urlAdditions}${conSubject}`);
+  }, [])
+
+  const submitForm = (e) => {
+    toast.promise(
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ "form-name": "contact", "name": conName, "email": conEmail, "subject": conSubject, "message": conMessage }).toString()
+      }),
+      {
+        loading: 'Sending message...',
+        success: <b>Message sent!</b>,
+        error: <b>Error sending, please try again</b>
+      }
+    ).then(clearClick())
+
+    e.preventDefault();
+  }
+
+  const clearClick = () => {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <Wrapper>
@@ -79,6 +135,7 @@ const ContactPage = (props) => {
             className={styles.gnb}
           />
         </nav>
+        <Toaster position="top-center" />
         <div className={styles.emptyDiv}></div>
         <form
           method="post"
@@ -87,6 +144,7 @@ const ContactPage = (props) => {
           name="contact"
           netlify
           className={styles.form}
+          onSubmit={submitForm}
         >
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
@@ -97,6 +155,8 @@ const ContactPage = (props) => {
               name="name"
               id="name"
               className={styles.nameInput}
+              onChange={inputName}
+              value={conName}
             />
           </label>
           <label className={styles.emailLabel}>
@@ -106,6 +166,8 @@ const ContactPage = (props) => {
               name="email"
               id="email"
               className={styles.emailInput}
+              onChange={inputEmail}
+              value={conEmail}
             />
           </label>
           <label className={styles.subjectLabel}>
@@ -115,6 +177,8 @@ const ContactPage = (props) => {
               name="subject"
               id="subject"
               className={styles.subjectInput}
+              onChange={inputSubject}
+              value={conSubject}
             />
           </label>
           <label className={styles.messageLabel}>
@@ -124,13 +188,15 @@ const ContactPage = (props) => {
               id="message"
               rows="5"
               className={styles.messageInput}
+              onChange={inputMessage}
+              value={conMessage}
             />
           </label>
           <div className={styles.buttons}>
             <button className={styles.submitButton} type="submit">
               Send
             </button>
-            <input type="reset" value="Clear" className={styles.clearButton} />
+            <button className={styles.clearButton} type="reset" onClick={clearClick}>Clear</button>
           </div>
         </form>
       </Wrapper>
