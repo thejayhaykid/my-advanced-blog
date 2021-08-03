@@ -4,22 +4,34 @@ title: "Resume"
 date: "2020-03-09T00:00:00.000Z"
 path: "/resume/"
 ---
+
 # SUMMARY
 
 I am a Software Developer, freelance graphic and logo designer, video editor, web developer by night specializing in sports. I am open to new challenges of any kind but ready to help your team digitally in multiple ways.
 
 ---
 
-# EXPERIENCE
+## Software Engineering Consultant
+
+### Daugherty Business Solutions, Columbus, OH / 2021 - Present
+
+- One of the first 15 consultants hired by Daugherty's new [Columbus](https://www.daugherty.com/columbus/) branch
+- Current client is a Fortune 500 Financial Company
+- Modernized customer relationship management application for the first time in fifteen years
+- Deployed full-stack development using React and Java Spring
+- Columbus Branch leader for the Health & Wellness Employee Engagement Group
+- Participated on the leadership committee for the New Hire Buddy Program for the entire company
+- Organized and directed virtual social events for engagement during remote assignments
 
 ## Senior Developer
 
-### Nationwide, Columbus, OH / 2020 - Present
+### Nationwide, Columbus, OH / 2020 - 2021
 
-- React Web Developer using Typescript on the biggest internal app at Nationwide
-- Helped migrate the Web App from Sharepoint to AWS
-- Participated in the Nationwide Hackathon, completed a front-end React app and was lead designer. App place in top 25% of the company
-- More information coming
+- Full-stack React Web Developer using Typescript on the biggest internal app at Nationwide
+- Assisted in migrating the Web App from Sharepoint to AWS Kubernetes cluster with a CI/CD pipeline using Concourse and Harness
+- Participated in the Nationwide Hackathon and design placed in top 25% of the company
+- Lead design on a completed front-end React app
+- Used multiple deployment strategies including Blue/Green and Canary deployments
 
 ## Consultant
 
@@ -34,7 +46,7 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 ### Apple, Inc., Cupertino, CA / 2014 – 2017
 
 - Resolved matters related to technical difficulties and product use/misuse to ensure customer satisfaction
-- Promoted to top tier of advising to collect data and logs that would be distributed to the engineering team for further research and problem solving 
+- Promoted to top tier of advising to collect data and logs that would be distributed to the engineering team for further research and problem solving
 - Consistently recognized as Top Performer based on customer surveys
 
 ---
@@ -52,12 +64,13 @@ I am a Software Developer, freelance graphic and logo designer, video editor, we
 
 - React
 - TypeScript
+- UI/UX Design
 - Docker
 - AWS
 - Python
 - GitHub
 - JavaScript
-- IBM Mainframe
+- Java with Spring Boot
 - SQL Databases
 - Hierarchical Databases
 
