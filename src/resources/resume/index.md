@@ -7,9 +7,17 @@ path: "/resume/"
 
 # EXPERIENCE
 
+## Software Engineer
+
+### Upstart, Columbus, OH / September 2021 - Present
+
+- A full-stack software engineer on the Auto Refinance team at Upstart
+- Utilizing a Ruby-on-Rails backend with a React frontend
+- Participated on a winning team in my first ever hackweek, turning the Auto signup funnel into a React Single Page app
+
 ## Software Engineering Consultant
 
-### Daugherty Business Solutions, Columbus, OH / 2021 - Present
+### Daugherty Business Solutions, Columbus, OH / February 2021 - September 2021
 
 - One of the first 15 consultants hired by Daugherty's new [Columbus](https://www.daugherty.com/columbus/) branch
 - Current client is a Fortune 500 Financial Company
@@ -45,6 +53,15 @@ path: "/resume/"
 - Resolved matters related to technical difficulties and product use/misuse to ensure customer satisfaction
 - Promoted to top tier of advising to collect data and logs that would be distributed to the engineering team for further research and problem solving
 - Consistently recognized as Top Performer based on customer surveys
+
+---
+
+# SIDE PROJECTS
+
+## [Stashtag.app](https://www.stashtag.app/)
+
+- Side project completed using [React](https://reactjs.org/) and [Chakra UI](https://chakra-ui.com/)
+- Store the hashtags you use in social posts so that you can be consistent in using them
 
 ---
 
