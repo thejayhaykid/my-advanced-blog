@@ -1,20 +1,22 @@
 {
   "name": "gatsby-advanced-blog",
   "version": "1.1.5",
-  "description": "Gatsby starter for advanced blog",
+  "description": "Jake Hayes' Personal Website and Blog",
   "main": "n/a",
-  "author": "wonism",
+  "author": "Jake Hayes",
   "license": "MIT",
-  "homepage": "https://github.com/wonism/gatsby-advanced-blog",
+  "homepage": "https://jakehayes.net",
   "keywords": [
-    "gatsby"
+    "blog",
+    "golf",
+    "tech",
+    "programming",
+    "design",
+    "sports"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wonism/gatsby-advanced-blog.git"
-  },
-  "bugs": {
-    "url": "https://github.com/wonism/gatsby-advanced-blo/issues"
+    "url": "git+https://github.com/thejayhaykid/my-advanced-blog.git"
   },
   "peerDependencies": {
     "gatsby": ">=2.2.9",
@@ -33,7 +35,6 @@
     "gatsby-plugin-feed": "^2.3.28",
     "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
     "gatsby-plugin-sass": "^2.3.12",
-    "node-sass": "^6.0.1",
     "npm": "^6.14.8",
     "query-string": "^6.14.1",
     "react": ">=16.8.5",
@@ -44,7 +45,6 @@
     "react-toggle": "^4.0.2",
     "react-truncate": "^2.4.0",
     "react-twitter-widgets": "^1.7.1",
-    "sass": "^1.26.10",
     "styled-components": ">=4.2.0"
   },
   "devDependencies": {
@@ -82,7 +82,8 @@
     "lint-staged": "^11.1.2",
     "prettier": "^1.16.4",
     "prettier-eslint-cli": "^5.0.1",
-    "prismjs": "^1.15.0"
+    "prismjs": "^1.15.0",
+    "sass": "^1.51.0"
   },
   "scripts": {
     "precommit": "lint-staged",
