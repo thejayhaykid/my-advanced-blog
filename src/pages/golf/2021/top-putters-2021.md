@@ -20,33 +20,30 @@ This is not just the look of the putter, but also the marketing and digital desi
 
 ![Odyssey Triple Track Ten Putter](../../../resources/images/blog/golf/2021-putters/ody-triple-track.png)
 
-I love everything about the Triple Track from Odyssey and Callaway, the purpose, the colors, the execution, all of it. Ultimately, I think the Ten is the best looking mallet putter that Odyssey makes and combined with the Triple Track it looks amazing. This design is clearly inspired by a different mallet putter that will show up later in the list, but this also has the classic Odyssey white face. If I had an unlimited budget and I had to buy 1 putter off this list, it would be this one. This putter may very well be my next golf club purchase.
-
-### Highlights
-
-- Triple Track goes perfectly with the model 10 head design
-- The wings in the back corners have great dynamic angles that are flat out nice to look at
-- This was on the Golf Digest Gold Hot List
-- There's a long list of functionality features, like all these putters will have, go to the [website](https://www.odysseygolf.com/triple-track/putters-2020-triple-track-ten.html) or a review where someone got to physically test this for that
+I love everything about the Triple Track from Odyssey and Callaway, the purpose, the colors, the execution, all of it. Ultimately, I think the Ten is the best looking mallet putter that Odyssey makes and combined with the Triple Track it looks amazing. This design is clearly inspired by the TaylorMade Spider, but this also has the classic Odyssey white face. I do own this putter and it is my current gamer. How much I love the look is a big part of why I picked it up.
 
 ## [PXG Battle Ready Bat Attack](https://www.pxg.com/en-us/clubs/putters/battle-ready-bat-attack)
 
 ![PXG Battle Ready Bat Attack](../../../resources/images/blog/golf/2021-putters/PXG-Bat-Attack.png)
 
-This is the one I admitedly have the most interaction with because it is the putter my dad uses. He is right handed, like most people, so I don't have any use experience with it, but my dad loves all of his PXG clubs and I trust his opinion on use. Design wise, this is a great looking putter.
+This is the putter that my dad currently uses, so I have seen this one in action as well. He is right handed, like most people, so I don't have any use experience with actually putting with it. But my dad loves all of his PXG clubs and I trust his opinion on use. Design wise, this is a great looking putter.
 
 ## [Ping 2021 Anser 4](https://ping.com/en-us/clubs/putters/ping-2021)
 
 ![Ping 2021 Anser 4](../../../resources/images/blog/golf/2021-putters/ping-2021-A4.png)
 
-## [TaylorMade Spider Tour](https://www.taylormadegolf.com/MySpider-Tour/DW-JIC43.html?lang=en_US&cgid=taylormade-putters-spiderfamily#lang=en_US&view=grid&start=14&)
-
-![TaylorMade Spider Tour](../../../resources/images/blog/golf/2021-putters/taylormade-spider-tour.png)
+Ping knows how to make putters and Anser is Ping at their best. I will always love a black and red color scheme. It looks very clean. Love the look of it.
 
 ## [Scotty Cameron Phantom X 12](https://www.scottycameron.com/putters/phantom-x/phantom-x-12/)
 
 ![Scotty Cameron Phantom X 12](../../../resources/images/blog/golf/2021-putters/sc-phantom-x-12.png)
 
+The Newport is the classic Scotty, with it's design that steals from the Anser like most blade putters do nowadays. But the Phantom X 12 is a great shape, I love the milled face. If I took any points off, it would be for the yellow used. The yellow is unique, but not a color that looks that great on the golf course.
+
 ## [Stix Putter](https://stix.golf/products/putter)
 
 ![Stix Putter](../../../resources/images/blog/golf/2021-putters/stix.png)
+
+This is a nice looking, mid-mallet putter from a DTC brand. It is clean and simple. And again, I am partial to a black and red color scheme.
+
+What are your favorite putter designs of 2021? Or of all time? Do you hate my list? Let me know here or [on my twitter](https://twitter.com/thejayhaykid)
