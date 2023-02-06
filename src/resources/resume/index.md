@@ -16,6 +16,14 @@ path: "/resume/"
 - Participated on a winning team in my first ever hackweek, converting a customer funnel from individual React apps into a single page application, increasing the site speed and stability
 - Lead a project to bring a new auto loan product to market that pays borrowers cash for the amount saved from their loan refinance
 
+## Senior Software Engineer (Part-time)
+
+### SportsBiz, Fully remote / September 2022 - Present
+
+- Founding engineer for SportsBiz startup helping bring application to the market to secure funding
+- Rewrote large section of proof-of-concept application into a workable, production level React application
+- Performed numerous bug-fixes for both the React frontend and the Java Spring backend
+
 ## Software Engineering Consultant
 
 ### Daugherty Business Solutions, Columbus, OH / February 2021 - September 2021
