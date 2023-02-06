@@ -9,11 +9,12 @@ path: "/resume/"
 
 ## Software Engineer
 
-### Upstart, Columbus, OH / September 2021 - Present
+### Upstart, Columbus, OH / September 2021 - January 2023
 
-- A full-stack software engineer on the Auto Refinance team at Upstart
-- Utilizing a Ruby-on-Rails backend with a React frontend
-- Participated on a winning team in my first ever hackweek, turning the Auto signup funnel into a React Single Page app
+- Full-stack engineer on the Auto Refinance team with a React front-end and Ruby on Rails backend
+- Worked as the team’s React and TypeScript “Frontend Champion”. Completing a project to pull the Auto Refinance signup flow out of the companies monolithic codebase into it’s own separate service
+- Participated on a winning team in my first ever hackweek, converting a customer funnel from individual React apps into a single page application, increasing the site speed and stability
+- Lead a project to bring a new auto loan product to market that pays borrowers cash for the amount saved from their loan refinance
 
 ## Software Engineering Consultant
 
